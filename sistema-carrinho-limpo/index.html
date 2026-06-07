@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Carrinho Limpo – Ailin Orioni</title>
+    <meta name="description" content="Rota estratégica de 30 minutos + detector de rótulos falsos. Compras 100% saudáveis sem enrolação.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#10b981',
+                        'brand-dark': '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #0d0b1e 0%, #1a1340 50%, #0d0b1e 100%); color: white; }
+        .hero-bg { background: linear-gradient(135deg, #0d0b1e 0%, #1a1340 60%, #1e1a4a 100%); }
+        .price-card { background: linear-gradient(135deg, #15122e, #1e1a4a); border: 1px solid rgba(16,185,129,0.3); }
+        .cta-btn { background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 0 30px rgba(16,185,129,0.35); transition: all 0.3s; display: inline-block; }
+        .cta-btn:hover { box-shadow: 0 0 50px rgba(16,185,129,0.55); transform: translateY(-2px); }
+        .strike { text-decoration: line-through; opacity: 0.55; }
+        .badge { background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.4); color: #10b981; }
+        .green { color: #10b981; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-answer.open { max-height: 400px; }
+        .faq-icon { transition: transform 0.3s; display: inline-block; }
+        .faq-icon.open { transform: rotate(45deg); }
+        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+        .floating { animation: float 3.5s ease-in-out infinite; }
+        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+        .section-alt { background: rgba(255,255,255,0.03); }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero-bg px-4 py-10 md:py-16">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="badge inline-block px-3 py-1 rounded-full text-sm font-bold mb-4">🛒 Sistema completo por apenas R$47</div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+                    Faça sua próxima ida ao mercado ser
+                    <span class="green"> 100% saudável</span> — e durar apenas <span class="green">30 minutos.</span>
+                </h1>
+                <p class="text-gray-300 text-lg mb-6">Rota estratégica + detector de rótulos falsos + mapa de abastecimento inteligente para você sair do mercado com carrinho 100% limpo e zero industrializado disfarçado.</p>
+                <a href="#price" class="cta-btn text-white font-bold text-lg px-8 py-4 rounded-xl w-full md:w-auto text-center block md:inline-block">✅ ACESSAR SISTEMA AGORA →</a>
+                <p class="text-gray-500 text-sm mt-3">🔒 Compra segura · Garantia incondicional de 7 dias</p>
+            </div>
+            <div class="flex-shrink-0 order-1 md:order-2">
+                <img src="https://ailinorioni.com/wp-content/uploads/2026/03/ChatGPT-Image-15-mar-2026-19_32_48-Photoroom-1-682x1024.png" alt="Ailin Orioni" class="w-48 md:w-64 lg:w-72 mx-auto floating">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICE - visível cedo (best practice low-ticket) -->
+<section id="price" class="px-4 py-12">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
+        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">70% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="text-gray-400 text-2xl strike">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="green">47</span><span class="text-3xl">,00</span></div>
+        </div>
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/03/preco-CURSO-lowticketnic-2-1024x701.png" alt="Sistema Carrinho Limpo" class="w-full rounded-xl mb-5">
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-gray-200"><span class="green text-xl">✅</span> 3 Videoaulas (Método Carrinho Limpo aplicado)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green text-xl">✅</span> Guia Oficial Carrinho Limpo (25 páginas)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green text-xl">✅</span> Mapa de Abastecimento + Radar Anti-Rótulo</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green text-xl">✅</span> Checklist Mobile + Painel de Controle</li>
+        </ul>
+        <a href="https://sun.eduzz.com/7WXGPYG40A?cupom=LIMPO" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">🛒 QUERO MEU CARRINHO LIMPO</a>
+        <p class="text-center text-gray-500 text-xs mt-3">Acesso imediato após a compra · Pagamento 100% seguro</p>
+    </div>
+</section>
+
+<!-- O QUE É -->
+<section class="px-4 py-10">
+    <div class="max-w-3xl mx-auto text-center">
+        <p class="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed">
+            O Sistema Carrinho Limpo é a forma mais simples e comprovada de fazer compras
+            <span class="green font-bold"> 100% saudáveis em apenas 30 minutos.</span>
+        </p>
+    </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">O Sistema Carrinho Limpo foi feito para <span class="green">mulheres que…</span></h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="card rounded-xl p-5">
+                <p class="text-gray-200 leading-relaxed">Já tentaram de tudo. Já leram rótulos. Já tentaram "comprar saudável". Já caíram em produtos "zero açúcar" e "integral" fake. Mas continuam levando industrializado disfarçado pra casa — sem critério real.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <p class="text-gray-200 leading-relaxed">Vivem sobrecarregadas (mãe + profissional + casa) e precisam fazer compras rápidas, inteligentes e sem erro — sem gastar horas no mercado, sem cair em marketing, e sem culpa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- O QUE VOCÊ APRENDE -->
+<section class="px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Independente da sua rotina, você vai aprender a:</h2>
+        <div class="space-y-4">
+            <div class="flex items-start gap-3"><span class="green text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Identificar rótulos falsos em 30 segundos (sem cair em marketing enganoso)</p></div>
+            <div class="flex items-start gap-3"><span class="green text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Fazer compras estratégicas sem perder tempo nem dinheiro</p></div>
+            <div class="flex items-start gap-3"><span class="green text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Organizar seu carrinho por categorias inteligentes</p></div>
+            <div class="flex items-start gap-3"><span class="green text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Abastecer sua casa só com comida que dá energia — não que drena</p></div>
+        </div>
+        <p class="text-gray-400 mt-6 text-center">Mais do que fazer compras, é sobre construir um sistema sólido e sustentável de abastecimento que valoriza seu corpo e protege sua energia de verdade.</p>
+    </div>
+</section>
+
+<!-- O QUE VOCÊ RECEBE -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">O que você vai receber no <span class="green">Sistema Carrinho Limpo?</span></h2>
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/03/mockups-entregaveis-ailin2-Photoroom-1-1024x700.png" alt="Materiais incluídos" class="w-full max-w-2xl mx-auto mt-6 mb-8">
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎬</div>
+                <h3 class="font-bold text-lg mb-1">3 Videoaulas</h3>
+                <p class="text-gray-400">Método Carrinho Limpo aplicado passo a passo. Você aplica já na próxima ida ao mercado.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">📖</div>
+                <h3 class="font-bold text-lg mb-1">Guia Oficial (25 páginas)</h3>
+                <p class="text-gray-400">Método completo, regras de ouro e critérios claros para decisão no mercado.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">🗺️</div>
+                <h3 class="font-bold text-lg mb-1">Mapa de Abastecimento + Radar Anti-Rótulo</h3>
+                <p class="text-gray-400">Guia definitivo de quais produtos comprar e quais evitar — por categoria.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">📱</div>
+                <h3 class="font-bold text-lg mb-1">Checklist Mobile + Painel de Controle</h3>
+                <p class="text-gray-400">Abra no celular dentro do mercado. Siga o checklist e saia com carrinho 100% limpo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem já aplicou o sistema <span class="green">diz isso:</span></h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/WhatsApp-Image-2025-09-10-at-10.11.45-1024x673.jpeg" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.47.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.51.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.44-1024x398.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden md:col-span-2"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/WhatsApp_Image_2026-01-21_at_11.12.32_1-1-872x1024.jpeg" alt="Depoimento" class="w-full max-w-sm mx-auto"></div>
+        </div>
+    </div>
+</section>
+
+<!-- POR QUE TÃO BARATO -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Por que tão barato? Vamos ser diretas.</h2>
+        <div class="price-card rounded-2xl p-6 md:p-8">
+            <p class="font-bold text-lg mb-3">Vamos ser diretas.</p>
+            <p class="text-gray-300 mb-4">Você provavelmente já comprou algum "curso de alimentação saudável" de R$ 97 ou R$ 197, certo? E o que recebeu?</p>
+            <div class="space-y-2 mb-6 text-gray-300">
+                <p>❌ 3 horas de vídeo genérico sobre "comer com consciência" e "se amar"</p>
+                <p>❌ Tabelas de alimentos que você já conhece</p>
+                <p>❌ Teoria motivacional que não resolve nada</p>
+                <p>❌ Zero sistema aplicável, científico ou que funciona de verdade</p>
+            </div>
+            <p class="font-bold green mb-3">Nós fizemos diferente.</p>
+            <p class="text-gray-200 mb-5">O Sistema Carrinho Limpo é direto ao ponto: o método exato, aplicável e científico para fazer compras 100% saudáveis em 30 minutos. Sem enrolação. Sem teoria desnecessária.</p>
+            <p class="font-bold mb-4">O valor é puramente simbólico por três razões:</p>
+            <div class="space-y-3">
+                <div class="flex items-start gap-2"><span class="green font-bold mt-1 flex-shrink-0">①</span><p class="text-gray-200">Você aplica pelo menos a Rota 30 — e isso já pode mudar suas próximas compras.</p></div>
+                <div class="flex items-start gap-2"><span class="green font-bold mt-1 flex-shrink-0">②</span><p class="text-gray-200">Você conhece meu método na prática — a mesma metodologia IIN (nutrição integrativa) que usei comigo e uso com minhas clientes.</p></div>
+                <div class="flex items-start gap-2"><span class="green font-bold mt-1 flex-shrink-0">③</span><p class="text-gray-200">Você entende se faz sentido trabalharmos juntas de forma mais profunda depois.</p></div>
+            </div>
+            <div class="mt-6 p-4 bg-green-400/10 border border-green-400/30 rounded-xl">
+                <p class="font-bold green">A razão real? Credibilidade.</p>
+                <p class="text-gray-300 mt-2">Quero que você veja resultados reais, entenda o quanto um sistema pode transformar suas compras (e sua energia), e decida com clareza se quer seguir comigo em programas mais avançados. Sem pegadinhas. Sem promessas milagrosas.</p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="#price" class="cta-btn text-white font-bold text-lg px-8 py-4 rounded-xl">✅ ACESSAR SISTEMA AGORA →</a>
+        </div>
+    </div>
+</section>
+
+<!-- PRICE REPEAT -->
+<section class="px-4 py-12">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
+        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">70% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="text-gray-400 text-2xl strike">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="green">47</span><span class="text-3xl">,00</span></div>
+        </div>
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-gray-200"><span class="green">✅</span> 3 Videoaulas (Método Carrinho Limpo aplicado)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green">✅</span> Guia Oficial Carrinho Limpo (25 páginas)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green">✅</span> Mapa de Abastecimento + Radar Anti-Rótulo</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="green">✅</span> Checklist Mobile + Painel de Controle</li>
+        </ul>
+        <a href="https://sun.eduzz.com/7WXGPYG40A?cupom=LIMPO" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">🛒 QUERO MEU CARRINHO LIMPO</a>
+    </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6">
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/02/garantia.png" alt="Garantia 7 dias" class="w-32 md:w-40 flex-shrink-0">
+        <div>
+            <h2 class="text-2xl font-extrabold mb-4 green">Garantia Incondicional de 7 dias</h2>
+            <div class="space-y-2 text-gray-200">
+                <p>1. Se não conseguir aplicar a Rota 30 nas suas próximas compras = dinheiro de volta</p>
+                <p>2. Se não for aplicável à sua rotina real (mesmo caótica) = dinheiro de volta</p>
+                <p>3. Se a qualidade não superar suas expectativas = dinheiro de volta</p>
+            </div>
+            <p class="font-bold green mt-4">Zero risco. 100% de potencial de transformação.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE AILIN -->
+<section class="px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem será sua <span class="green">mentora?</span></h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <img src="https://ailinorioni.com/wp-content/uploads/2026/02/IMG_0290-576x1024.jpeg" alt="Ailin Orioni" class="w-40 md:w-52 rounded-2xl flex-shrink-0 object-cover">
+            <div>
+                <h3 class="text-2xl font-extrabold green mb-3">AILIN ORIONI</h3>
+                <p class="text-gray-200 mb-3">Especialista em saúde integral feminina e certificada pelo <strong>Institute for Integrative Nutrition (IIN)</strong> – a maior escola de health coaching do mundo.</p>
+                <p class="text-gray-300 mb-3">Ailin viveu na própria pele o que é exaustão crônica. Executiva corporativa no auge da carreira, passou por 4 países e 3 carreiras diferentes até entender que o problema não era disciplina — <strong>era sistema errado.</strong></p>
+                <p class="text-gray-300 mb-3">Aos 30 anos, largou tudo para reconstruir sua saúde do zero. Maternidade na pandemia, sem rede de apoio, em país estrangeiro. Foi aí que ela descobriu o método IIN e recuperou sua energia através de <strong>hábitos simples baseados em ciência.</strong></p>
+                <p class="text-gray-300 mb-3">Hoje, mora no México com a filha Ana e ajuda mulheres sobrecarregadas a recuperarem energia e tomarem decisões saudáveis que cabem na rotina real — <strong>sem dieta maluca, sem rotina impossível e sem culpa.</strong></p>
+                <p class="text-gray-300 mb-4">Sua abordagem combina <strong>cronobiologia, nutrição funcional e neurociência comportamental</strong> aplicada à vida real.</p>
+                <p class="green italic">"Não é sobre perfeição, é sobre hábitos simples que você CONSEGUE manter. Energia não se força, energia se constrói."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DECISÃO -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-extrabold mb-8">A decisão é <span class="green">simples!</span></h2>
+        <div class="grid md:grid-cols-2 gap-4 mb-8 text-left">
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
+                <p class="text-red-400 font-bold text-lg mb-2">❌ Opção 1</p>
+                <p class="text-gray-300">Continuar comprando no piloto automático e levando industrializado disfarçado pra casa.</p>
+            </div>
+            <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-5">
+                <p class="green font-bold text-lg mb-2">✅ Opção 2</p>
+                <p class="text-gray-300">Investir R$ 47 e aprender a fazer compras 100% saudáveis em 30 minutos.</p>
+            </div>
+        </div>
+        <p class="text-gray-300 mb-6 text-lg">Uma única ida ao mercado com carrinho limpo já vale 10x esse investimento.</p>
+        <a href="https://sun.eduzz.com/7WXGPYG40A?cupom=LIMPO" class="cta-btn text-white font-extrabold text-xl px-10 py-5 rounded-xl">🛒 GARANTA SEU SISTEMA AGORA →</a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8"><span class="green">Perguntas</span> frequentes</h2>
+        <div id="faq" class="divide-y divide-white/10">
+            <div class="faq-item py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona com rotina caótica (trabalho + casa + filhos)?</span>
+                    <span class="faq-icon green text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. O sistema foi feito PARA rotina caótica. A Rota 30 leva 30 minutos no mercado — o mesmo tempo (ou menos) que você já gasta hoje, só que de forma estratégica. Se não couber na sua vida real, você tem garantia de 7 dias e dinheiro de volta.</p>
+                </div>
+            </div>
+            <div class="faq-item py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona se eu já tentei "ler rótulos" e nunca deu certo?</span>
+                    <span class="faq-icon green text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. O problema nunca foi falta de tentativa — foi falta de critério claro. O Sistema Carrinho Limpo te dá critérios objetivos e simples para decidir no mercado em segundos. Sem decorar nada, sem ficar analisando cada produto eternamente.</p>
+                </div>
+            </div>
+            <div class="faq-item py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Preciso virar nutricionista ou decorar tabelas?</span>
+                    <span class="faq-icon green text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Não. O sistema foi criado para funcionar sem decorar nada. Você recebe um checklist mobile que abre no celular dentro do mercado. É só seguir.</p>
+                </div>
+            </div>
+            <div class="faq-item py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Tem garantia? E se não funcionar pra mim?</span>
+                    <span class="faq-icon green text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. 7 dias de garantia incondicional. Se não conseguir aplicar a Rota 30, se não for aplicável à sua rotina, ou se a qualidade não superar suas expectativas — dinheiro de volta. Zero risco.</p>
+                </div>
+            </div>
+            <div class="faq-item py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona mesmo em 30 minutos?</span>
+                    <span class="faq-icon green text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. A Rota 30 é uma rota estratégica pelo mercado — por categorias, por ordem de prioridade, com critérios claros de decisão. Quem aplica pela primeira vez costuma sair surpreendida com o tempo que economizou.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="px-4 py-10">
+    <div class="max-w-xl mx-auto text-center">
+        <a href="https://sun.eduzz.com/7WXGPYG40A?cupom=LIMPO" class="cta-btn block w-full text-white font-extrabold text-xl py-5 rounded-xl">🛒 QUERO MEU CARRINHO LIMPO AGORA →</a>
+        <p class="text-gray-500 text-sm mt-3">🔒 Compra 100% segura · Acesso imediato · Garantia de 7 dias</p>
+    </div>
+</section>
+
+<footer class="px-4 py-6 border-t border-white/10 text-center text-gray-600 text-sm">
+    Ailin Orioni © 2026 – Todos os Direitos Reservados
+</footer>
+
+<script>
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-icon').forEach(i => { i.classList.remove('open'); i.textContent = '+'; });
+    if (!isOpen) {
+        answer.classList.add('open');
+        icon.classList.add('open');
+        icon.textContent = '×';
+    }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Livre do Cansaço – Ailin Orioni</title>
+    <meta name="description" content="Elimine o cansaço crônico em 7 dias. 3 ajustes que atacam a raiz metabólica e comportamental do cansaço.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#f97316',
+                        'brand-dark': '#ea580c',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #0f0a05 0%, #1a1008 50%, #0f0a05 100%); color: white; }
+        .hero-bg { background: linear-gradient(135deg, #0f0a05 0%, #1a1008 60%, #221505 100%); }
+        .price-card { background: linear-gradient(135deg, #1a1008, #221505); border: 1px solid rgba(249,115,22,0.3); }
+        .cta-btn { background: linear-gradient(135deg, #f97316, #ea580c); box-shadow: 0 0 30px rgba(249,115,22,0.35); transition: all 0.3s; display: inline-block; }
+        .cta-btn:hover { box-shadow: 0 0 50px rgba(249,115,22,0.55); transform: translateY(-2px); }
+        .strike { text-decoration: line-through; opacity: 0.55; }
+        .badge { background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.4); color: #f97316; }
+        .orange { color: #f97316; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-answer.open { max-height: 400px; }
+        .faq-icon { transition: transform 0.3s; display: inline-block; }
+        .faq-icon.open { transform: rotate(45deg); }
+        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+        .floating { animation: float 3.5s ease-in-out infinite; }
+        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
+        .section-alt { background: rgba(249,115,22,0.03); }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero-bg px-4 py-10 md:py-16">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="badge inline-block px-3 py-1 rounded-full text-sm font-bold mb-4">⚡ Protocolo completo por apenas R$47</div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+                    Elimine o seu cansaço crônico em
+                    <span class="orange"> 7 dias</span> com o Protocolo <em>Livre do Cansaço.</em>
+                </h1>
+                <p class="text-gray-300 text-lg mb-6">3 ajustes que atacam a RAIZ metabólica e comportamental do cansaço + manual de hábitos e checklist diário para você aplicar e recuperar energia de forma científica e rápida.</p>
+                <a href="#price" class="cta-btn text-white font-bold text-lg px-8 py-4 rounded-xl w-full md:w-auto text-center block md:inline-block">✅ RECEBER PROTOCOLO AGORA →</a>
+                <p class="text-gray-500 text-sm mt-3">🔒 Compra segura · Garantia incondicional de 7 dias</p>
+            </div>
+            <div class="flex-shrink-0 order-1 md:order-2">
+                <img src="https://ailinorioni.com/wp-content/uploads/2026/03/ChatGPT-Image-15-mar-2026-19_32_48-Photoroom-1-682x1024.png" alt="Ailin Orioni" class="w-48 md:w-64 lg:w-72 mx-auto floating">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICE - visível cedo -->
+<section id="price" class="px-4 py-12">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
+        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">70% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="text-gray-400 text-2xl strike">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="orange">47</span><span class="text-3xl">,00</span></div>
+        </div>
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/03/preco-CURSO-lowticketnic-2-1024x701.png" alt="Protocolo Livre do Cansaço" class="w-full rounded-xl mb-5">
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> 3 Mini Aulas Estratégicas (Método 3 Ajustes aplicado)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> Protocolo dia a dia completo Hábitos 7D</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> Checklist Diário + Planilha de Monitoramento</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">🎁</span> BÔNUS: Farmácia Rápida SOS Cansaço</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">🎁</span> BÔNUS: Checklist Mobile Compacto</li>
+        </ul>
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
+        <p class="text-center text-gray-500 text-xs mt-3">Acesso imediato após a compra · Pagamento 100% seguro</p>
+    </div>
+</section>
+
+<!-- O QUE É -->
+<section class="px-4 py-10">
+    <div class="max-w-3xl mx-auto text-center">
+        <p class="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed">
+            O Protocolo Livre do Cansaço é a forma mais simples e comprovada de eliminar o cansaço crônico e recuperar energia em
+            <span class="orange font-bold"> apenas 7 dias.</span>
+        </p>
+    </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">O Protocolo Livre do Cansaço 7D foi feito para <span class="orange">mulheres que…</span></h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="card rounded-xl p-5">
+                <p class="text-gray-200 leading-relaxed">Já tentaram de tudo. Já fizeram dietas. Já tomaram suplementos. Já dormiram 8 horas. Mas continuam cansadas. Exaustas. Sem energia real. E sem saber como sair desse ciclo.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <p class="text-gray-200 leading-relaxed">Vivem sobrecarregadas (mãe + profissional + casa) e buscam energia sustentável sem dieta maluca, sem rotina impossível, e sem culpa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- O QUE VOCÊ APRENDE -->
+<section class="px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Independente da sua rotina, você vai aprender a:</h2>
+        <div class="space-y-4">
+            <div class="flex items-start gap-3"><span class="orange text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Corrigir a raiz metabólica do cansaço (glicemia + cortisol)</p></div>
+            <div class="flex items-start gap-3"><span class="orange text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Estabilizar sua energia sem depender de café e açúcar</p></div>
+            <div class="flex items-start gap-3"><span class="orange text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Reduzir sobrecarga mental e decisão excessiva</p></div>
+            <div class="flex items-start gap-3"><span class="orange text-2xl mt-0.5 flex-shrink-0">✓</span><p class="text-gray-200 text-lg">Ter mais disposição, clareza e presença no dia a dia</p></div>
+        </div>
+        <p class="text-gray-400 mt-6 text-center">Mais do que eliminar o cansaço, é sobre construir um sistema sólido e sustentável de energia que valoriza seu corpo e te dá vitalidade de verdade.</p>
+    </div>
+</section>
+
+<!-- O QUE VOCÊ RECEBE -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">O que você vai receber no <span class="orange">Protocolo Livre do Cansaço 7D?</span></h2>
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/03/mockups-entregaveis-ailin2-Photoroom-1-1024x700.png" alt="Materiais incluídos" class="w-full max-w-2xl mx-auto mt-6 mb-8">
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎬</div>
+                <h3 class="font-bold text-lg mb-1">3 Mini Aulas Estratégicas</h3>
+                <p class="text-gray-400">Método 3 Ajustes aplicado. Você começa a ver diferença no primeiro dia.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">📋</div>
+                <h3 class="font-bold text-lg mb-1">Protocolo Hábitos 7D</h3>
+                <p class="text-gray-400">Protocolo dia a dia completo. Exatamente o que fazer em cada dia da semana.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">📱</div>
+                <h3 class="font-bold text-lg mb-1">Checklist Diário + Planilha</h3>
+                <p class="text-gray-400">Acompanhe seu progresso e mantenha o foco durante os 7 dias.</p>
+            </div>
+            <div class="price-card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎁</div>
+                <h3 class="font-bold text-lg mb-1 orange">BÔNUS: Farmácia Rápida SOS Cansaço</h3>
+                <p class="text-gray-400">Suplementos que realmente funcionam (e quais ignorar). Sem suposição.</p>
+            </div>
+            <div class="price-card rounded-xl p-5 md:col-span-2">
+                <div class="text-3xl mb-2">🎁</div>
+                <h3 class="font-bold text-lg mb-1 orange">BÔNUS: Checklist Mobile Compacto</h3>
+                <p class="text-gray-400">Versão pocket dos hábitos 7D para você ter sempre no celular.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem já aplicou o protocolo <span class="orange">diz isso:</span></h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/WhatsApp-Image-2025-09-10-at-10.11.45-1024x673.jpeg" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.47.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.51.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/Captura-de-Tela-2025-09-10-as-10.12.44-1024x398.png" alt="Depoimento" class="w-full"></div>
+            <div class="card rounded-xl overflow-hidden md:col-span-2"><img src="https://ailinorioni.com/wp-content/uploads/2026/02/WhatsApp_Image_2026-01-21_at_11.12.32_1-1-872x1024.jpeg" alt="Depoimento" class="w-full max-w-sm mx-auto"></div>
+        </div>
+    </div>
+</section>
+
+<!-- POR QUE TÃO BARATO -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Por que tão barato? Vamos ser diretas.</h2>
+        <div class="price-card rounded-2xl p-6 md:p-8">
+            <p class="text-gray-300 mb-4">Você provavelmente já comprou algum "curso de saúde" de R$ 97 ou R$ 197, certo? E o que recebeu?</p>
+            <div class="space-y-2 mb-6 text-gray-300">
+                <p>❌ 3 horas de vídeo genérico sobre "autocuidado" e "amor próprio"</p>
+                <p>❌ Tabelas de alimentos que você já conhece</p>
+                <p>❌ Teoria motivacional que não resolve nada</p>
+                <p>❌ Zero protocolo aplicável, científico ou que funciona de verdade</p>
+            </div>
+            <p class="font-bold orange mb-3">Nós fizemos diferente.</p>
+            <p class="text-gray-200 mb-5">O Protocolo Livre do Cansaço 7D é direto ao ponto: o método exato, científico e aplicável. Sem enrolação. Sem teoria desnecessária.</p>
+            <p class="font-bold mb-4">O valor é puramente simbólico por três razões:</p>
+            <div class="space-y-3">
+                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você aplica pelo menos 1 dos 3 ajustes — e isso já pode mudar sua energia no dia seguinte.</p></div>
+                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você conhece meu método na prática — a mesma metodologia IIN que usei comigo e uso com minhas clientes.</p></div>
+                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você entende se faz sentido trabalharmos juntas de forma mais profunda depois.</p></div>
+            </div>
+            <div class="mt-6 p-4 bg-orange-400/10 border border-orange-400/30 rounded-xl">
+                <p class="font-bold orange">A razão real? Credibilidade.</p>
+                <p class="text-gray-300 mt-2">Quero que você veja resultados reais, entenda o quanto um ajuste pode transformar sua energia, e decida com clareza se quer seguir comigo em programas mais avançados. Sem pegadinhas. Sem promessas milagrosas.</p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="#price" class="cta-btn text-white font-bold text-lg px-8 py-4 rounded-xl">✅ RECEBER PROTOCOLO AGORA →</a>
+        </div>
+    </div>
+</section>
+
+<!-- PRICE REPEAT -->
+<section class="px-4 py-12">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
+        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">70% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="text-gray-400 text-2xl strike">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="orange">47</span><span class="text-3xl">,00</span></div>
+        </div>
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> 3 Mini Aulas Estratégicas (Método 3 Ajustes aplicado)</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> Protocolo dia a dia completo Hábitos 7D</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> Checklist Diário + Planilha de Monitoramento</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange">🎁</span> BÔNUS: Farmácia Rápida SOS Cansaço</li>
+            <li class="flex items-center gap-2 text-gray-200"><span class="orange">🎁</span> BÔNUS: Checklist Mobile Compacto</li>
+        </ul>
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
+    </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-6">
+        <img src="https://ailinorioni.com/wp-content/uploads/2026/02/garantia.png" alt="Garantia 7 dias" class="w-32 md:w-40 flex-shrink-0">
+        <div>
+            <h2 class="text-2xl font-extrabold mb-4 orange">Garantia Incondicional de 7 dias</h2>
+            <div class="space-y-2 text-gray-200">
+                <p>1. Se não sentir NENHUMA melhora de energia nos primeiros 7 dias = dinheiro de volta</p>
+                <p>2. Se não for aplicável à sua rotina real (mesmo caótica) = dinheiro de volta</p>
+                <p>3. Se a qualidade não superar suas expectativas = dinheiro de volta</p>
+            </div>
+            <p class="font-bold orange mt-4">Zero risco. 100% de potencial de transformação.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE AILIN -->
+<section class="px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem será sua <span class="orange">mentora?</span></h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <img src="https://ailinorioni.com/wp-content/uploads/2026/02/IMG_0290-576x1024.jpeg" alt="Ailin Orioni" class="w-40 md:w-52 rounded-2xl flex-shrink-0 object-cover">
+            <div>
+                <h3 class="text-2xl font-extrabold orange mb-3">AILIN ORIONI</h3>
+                <p class="text-gray-200 mb-3"><strong>Especialista em saúde integral feminina e certificada pelo Institute for Integrative Nutrition (IIN)</strong> – a maior escola de health coaching do mundo.</p>
+                <p class="text-gray-300 mb-3">Ailin viveu na própria pele o que é exaustão crônica. Executiva corporativa no auge da carreira, passou por 4 países e 3 carreiras diferentes até entender que o problema não era disciplina — era sistema errado.</p>
+                <p class="text-gray-300 mb-3">Aos 30 anos, largou tudo para reconstruir sua saúde do zero. Maternidade na pandemia, sem rede de apoio, em país estrangeiro. Foi aí que ela descobriu o método IIN e recuperou sua energia através de hábitos simples baseados em ciência.</p>
+                <p class="text-gray-300 mb-3">Hoje, mora no México com a filha Ana, ajuda mulheres sobrecarregadas a recuperarem energia sem dieta maluca, sem rotina impossível e sem culpa. Sua abordagem combina cronobiologia, nutrição funcional e neurociência comportamental aplicada à vida real.</p>
+                <p class="text-gray-300 mb-4">Já transformou a energia de dezenas de mulheres que achavam que o problema era "falta de força de vontade", quando na verdade era falta de estrutura científica que coubesse na rotina caótica delas.</p>
+                <p class="orange italic">"Não é sobre perfeição, é sobre hábitos simples que você CONSEGUE manter. Energia não se força, energia se constrói."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DECISÃO -->
+<section class="section-alt px-4 py-12">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-extrabold mb-8">A decisão é <span class="orange">simples!</span></h2>
+        <div class="grid md:grid-cols-2 gap-4 mb-8 text-left">
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
+                <p class="text-red-400 font-bold text-lg mb-2">❌ Opção 1</p>
+                <p class="text-gray-300">Continuar vivendo de café, açúcar e força de vontade.</p>
+            </div>
+            <div class="bg-orange-500/10 border border-orange-500/30 rounded-xl p-5">
+                <p class="orange font-bold text-lg mb-2">✅ Opção 2</p>
+                <p class="text-gray-300">Investir R$ 47 e aprender a recuperar energia de verdade.</p>
+            </div>
+        </div>
+        <p class="text-gray-300 mb-6 text-lg">Um único dia com energia sustentável já vale 10x esse investimento.</p>
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" class="cta-btn text-white font-extrabold text-xl px-10 py-5 rounded-xl">⚡ GARANTA SEU PROTOCOLO AGORA →</a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8"><span class="orange">Perguntas</span> frequentes</h2>
+        <div class="divide-y divide-white/10">
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona com rotina caótica (trabalho + casa + filhos)?</span>
+                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. O protocolo foi feito PARA rotina caótica. Os 3 ajustes levam entre 10-20 minutos por dia — menos que o tempo que você passa no Instagram. Se não couber na sua vida real, você tem garantia de 7 dias e dinheiro de volta.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona se eu já tentei "tudo" e nada deu certo?</span>
+                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. O problema nunca foi falta de tentativa — foi ausência de método científico. O Protocolo ataca a raiz metabólica (glicemia e cortisol), que é o que nenhum curso de "autocuidado" toca.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Preciso fazer dieta restritiva ou rotina de 2 horas?</span>
+                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Não. O protocolo foi criado para caber em rotinas reais — sem dieta maluca e sem 2 horas de rituais matinais. São 3 ajustes simples que você encaixa no que já faz.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Tem garantia? E se não funcionar pra mim?</span>
+                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. 7 dias de garantia incondicional. Se não sentir NENHUMA melhora de energia, se não for aplicável à sua rotina, ou se a qualidade não superar suas expectativas — dinheiro de volta. Zero risco.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg">Funciona mesmo em 7 dias?</span>
+                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 text-gray-300">
+                    <p>Sim. Os ajustes do protocolo agem em cadeia: o primeiro estabiliza glicemia, o segundo reduz cortisol, o terceiro elimina decisões desnecessárias. Juntos, o efeito é perceptível nos primeiros dias.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="px-4 py-10">
+    <div class="max-w-xl mx-auto text-center">
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" class="cta-btn block w-full text-white font-extrabold text-xl py-5 rounded-xl">⚡ QUERO RECUPERAR MINHA ENERGIA AGORA →</a>
+        <p class="text-gray-500 text-sm mt-3">🔒 Compra 100% segura · Acesso imediato · Garantia de 7 dias</p>
+    </div>
+</section>
+
+<footer class="px-4 py-6 border-t border-white/10 text-center text-gray-600 text-sm">
+    Ailin Orioni © 2026 – Todos os Direitos Reservados
+</footer>
+
+<script>
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-icon').forEach(i => { i.classList.remove('open'); i.textContent = '+'; });
+    if (!isOpen) {
+        answer.classList.add('open');
+        icon.classList.add('open');
+        icon.textContent = '×';
+    }
+}
+</script>
+</body>
+</html>

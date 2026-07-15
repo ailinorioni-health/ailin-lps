@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ailin Orioni</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #0f0a05 0%, #1a1008 50%, #0f0a05 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px 60px;
+  }
+  .wrap { width: 100%; max-width: 420px; text-align: center; }
+  .avatar {
+    width: 96px; height: 96px; border-radius: 50%;
+    object-fit: cover; margin: 0 auto 16px;
+    border: 2px solid rgba(255,255,255,0.25);
+  }
+  h1 { font-size: 20px; font-weight: 700; margin-bottom: 6px; }
+  .tagline {
+    font-size: 14px; color: rgba(255,255,255,0.75);
+    margin-bottom: 32px; line-height: 1.5;
+  }
+  .links { display: flex; flex-direction: column; gap: 14px; }
+  a.link-btn {
+    display: block;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s, transform 0.15s;
+  }
+  a.link-btn:active { transform: scale(0.98); }
+  a.link-btn.hero {
+    background: linear-gradient(135deg, #d97b3f, #b85c2e);
+    border: none;
+  }
+  .sub { font-weight: 400; font-size: 12.5px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+  .hero .sub { color: rgba(255,255,255,0.85); }
+  #sobre {
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.85);
+  }
+  #sobre h2 { font-size: 15px; margin-bottom: 10px; color: #fff; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="avatar" src="/images/ailin-foto.jpeg" alt="Ailin Orioni">
+    <h1>Ailin Orioni</h1>
+    <p class="tagline">Ajudo mulheres exaustas a recuperar energia real —<br>sem dieta, sem culpa.</p>
+
+    <div class="links">
+      <a class="link-btn hero" href="https://ailinorioni.com/protocolo-livre-do-cansaco/">
+        🔥 Protocolo Livre do Cansaço 7D
+        <div class="sub">Energia em 7 dias — R$47</div>
+      </a>
+      <a class="link-btn" href="https://carrinholimpo.ailinorioni.com">
+        🛒 Sistema Carrinho Limpo
+        <div class="sub">Mercado 100% saudável em 30min — R$47</div>
+      </a>
+      <a class="link-btn" href="#sobre">
+        👋 Sobre a Ailin
+      </a>
+      <a class="link-btn" href="https://instagram.com/ailinorioni">
+        💬 Fala comigo
+        <div class="sub">Manda DM no Instagram</div>
+      </a>
+    </div>
+
+    <div id="sobre">
+      <h2>Sobre a Ailin</h2>
+      <p>Argentina, vivi a vida toda no Brasil, hoje moro no México. Mãe da Ana. Health Coach certificada (IIN).</p>
+      <p style="margin-top:8px;">Acredito que o método tem que caber na sua vida — não o contrário. Já estive exausta. Sei como é.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protocolo Livre do Cansaço – Ailin Orioni</title>
-    <meta name="description" content="Elimine o cansaço crônico em 7 dias. 3 ajustes que atacam a raiz metabólica e comportamental do cansaço.">
+    <meta name="description" content="Elimine o cansaço crônico em 7 dias com a Ordem Certa da Energia — 3 passos aplicados na sequência que funciona.">
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -24,69 +24,70 @@
     <!-- End Meta Pixel Code -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#f97316',
-                        'brand-dark': '#ea580c',
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400..600;1,400..600&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background: linear-gradient(180deg, #0f0a05 0%, #1a1008 50%, #0f0a05 100%); color: white; }
-        .hero-bg { background: linear-gradient(135deg, #0f0a05 0%, #1a1008 60%, #221505 100%); }
-        .price-card { background: linear-gradient(135deg, #1a1008, #221505); border: 1px solid rgba(249,115,22,0.3); }
-        .cta-btn { background: linear-gradient(135deg, #f97316, #ea580c); box-shadow: 0 0 30px rgba(249,115,22,0.35); transition: all 0.3s; display: inline-block; }
-        .cta-btn:hover { box-shadow: 0 0 50px rgba(249,115,22,0.55); transform: translateY(-2px); }
-        .strike { text-decoration: line-through; opacity: 0.55; }
-        .badge { background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.4); color: #f97316; }
-        .orange { color: #f97316; }
+        :root{
+            --ink:#2b2621; --ink-soft:#4a4238;
+            --olive-900:#33362b; --olive-700:#4a4d3c; --olive-500:#6e7a63;
+            --clay-700:#7a4a30; --clay-500:#a3603a; --clay-300:#c98f63;
+            --sand-500:#c9ae82; --sand-300:#e2d3b6;
+            --stone-500:#a79a82; --stone-300:#cdc3ae;
+            --cream-100:#f7f1e6; --cream-50:#fbf7ef; --paper:#fffdf8;
+            --accent-orange:#bf5c2a; --accent-orange-soft:#e8c9a8;
+        }
+        body { font-family: 'Work Sans', -apple-system, Helvetica, Arial, sans-serif; background: var(--cream-100); color: var(--ink); }
+        h1, h2, h3 { font-family: 'Work Sans', -apple-system, Helvetica, Arial, sans-serif; letter-spacing: -0.01em; }
+        .serif-em { font-family: 'Newsreader', Georgia, serif; font-style: italic; }
+        .serif { font-family: 'Newsreader', Georgia, serif; }
+        .section-cream { background: var(--cream-100); }
+        .section-sand { background: var(--sand-300); }
+        .section-dark { background: var(--olive-900); color: var(--cream-50); }
+        .card { background: var(--paper); border: 1px solid var(--stone-300); box-shadow: 0 1px 3px rgba(43,38,33,0.08); }
+        .price-card { background: var(--paper); border: 1px solid var(--stone-300); box-shadow: 0 6px 20px rgba(43,38,33,0.10); }
+        .badge { background: var(--sand-300); color: var(--ink); letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
+        .badge-urgency { background: var(--accent-orange); color: var(--cream-50); letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
+        .cta-btn { background: var(--clay-500); color: var(--cream-50); border-radius: 4px; transition: background 150ms ease; display: inline-block; }
+        .cta-btn:hover { background: var(--clay-700); }
+        .strike { text-decoration: line-through; color: var(--stone-500); }
+        .clay { color: var(--clay-700); }
+        .urgency { color: var(--accent-orange); }
+        .muted { color: var(--ink-soft); }
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
         .faq-answer.open { max-height: 400px; }
         .faq-icon { transition: transform 0.3s; display: inline-block; }
         .faq-icon.open { transform: rotate(45deg); }
-        @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-        .floating { animation: float 3.5s ease-in-out infinite; }
-        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); }
-        .section-alt { background: rgba(249,115,22,0.03); }
-        .step-num { background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.4); color: #f97316; }
+        .step-num { font-family: 'Newsreader', Georgia, serif; color: var(--sand-500); font-size: 2rem; }
     </style>
 </head>
 <body>
 
 <!-- BLOCO 1 — VENDER SOZINHO (primeira dobra) — SEM botão -->
-<section class="hero-bg px-4 py-10 md:py-16">
+<section class="section-cream px-4 py-10 md:py-16">
     <div class="max-w-5xl mx-auto">
         <div class="flex flex-col md:flex-row items-center gap-8">
             <div class="flex-1 order-2 md:order-1">
-                <div class="badge inline-block px-3 py-1 rounded-full text-sm font-bold mb-4">⚡ Método científico · 7 dias</div>
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
-                    Elimine o seu cansaço crônico em
-                    <span class="orange"> 7 dias</span> com os <em>3 Ajustes</em> do Protocolo Livre do Cansaço.
+                <div class="badge inline-block px-3 py-1 rounded-full font-semibold mb-4">⚡ O mecanismo: a Ordem Certa · 7 dias</div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4" style="color:var(--ink)">
+                    Não é o que você faz. É a <em class="clay serif-em">ORDEM</em> que você faz.
                 </h1>
-                <p class="text-gray-300 text-lg mb-6">3 ajustes que atacam a RAIZ metabólica e comportamental do cansaço + manual de hábitos e checklist diário para você aplicar e recuperar energia de forma científica e rápida.</p>
+                <p class="muted text-lg mb-6">3 passos que atacam a RAIZ metabólica e comportamental do cansaço — aplicados na <strong style="color:var(--ink)">Ordem Certa da Energia</strong>, não numa lista solta. Manual de hábitos e checklist diário inclusos para você recuperar energia de forma científica e rápida em 7 dias.</p>
                 <ul class="space-y-2 mb-2">
-                    <li class="flex items-center gap-2 text-gray-200"><span class="orange">✓</span> Sem dieta maluca</li>
-                    <li class="flex items-center gap-2 text-gray-200"><span class="orange">✓</span> Sem rotina impossível</li>
-                    <li class="flex items-center gap-2 text-gray-200"><span class="orange">✓</span> Baseado em ciência, não em teoria motivacional</li>
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Sem dieta maluca</li>
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Sem rotina impossível</li>
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Baseado em ciência, não em teoria motivacional</li>
                 </ul>
             </div>
             <div class="flex-shrink-0 order-1 md:order-2">
-                <img src="/public/images/ailin-hero-real2.jpg" alt="Ailin Orioni" class="w-48 md:w-64 lg:w-72 mx-auto rounded-2xl object-cover aspect-[3/4] floating" style="box-shadow:0 20px 50px rgba(0,0,0,0.4); object-position: 75% 15%">
+                <img src="/public/images/ailin-hero-real2.jpg" alt="Ailin Orioni" class="w-56 md:w-72 lg:w-80 mx-auto object-cover aspect-[4/5]" style="border-radius:10px; box-shadow:0 16px 40px rgba(43,38,33,0.14); object-position: 75% 15%">
             </div>
         </div>
     </div>
 </section>
 
 <!-- BLOCO 2 — DEPOIMENTOS -->
-<section class="px-4 py-12">
+<section class="section-sand px-4 py-12">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem já aplicou o protocolo <span class="orange">diz isso:</span></h2>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Quem já aplicou o protocolo <em class="clay serif-em">diz isso:</em></h2>
         <div class="grid md:grid-cols-2 gap-4">
             <div class="card rounded-xl overflow-hidden"><img src="/public/images/dep-protocolo-1.png" alt="Depoimento" class="w-full"></div>
             <div class="card rounded-xl overflow-hidden"><img src="/public/images/dep-protocolo-2.png" alt="Depoimento" class="w-full"></div>
@@ -98,166 +99,167 @@
 </section>
 
 <!-- BLOCO 3 — DOR LATENTE -->
-<section class="section-alt px-4 py-12">
+<section class="section-cream px-4 py-12">
     <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Isso aqui é <span class="orange">você?</span></h2>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Isso aqui é <em class="clay serif-em">você?</em></h2>
         <div class="card rounded-2xl p-6 md:p-8 space-y-4">
-            <div class="flex items-start gap-3"><span class="orange text-xl mt-0.5 flex-shrink-0">☑</span><p class="text-gray-200 text-lg">Dorme as 8 horas certinho, mas acorda tão cansada quanto quando foi dormir</p></div>
-            <div class="flex items-start gap-3"><span class="orange text-xl mt-0.5 flex-shrink-0">☑</span><p class="text-gray-200 text-lg">Já tentou dieta, suplemento, dormir mais — e nada resolveu de verdade</p></div>
-            <div class="flex items-start gap-3"><span class="orange text-xl mt-0.5 flex-shrink-0">☑</span><p class="text-gray-200 text-lg">Depende de café e açúcar só pra conseguir funcionar até o fim do dia</p></div>
-            <div class="flex items-start gap-3"><span class="orange text-xl mt-0.5 flex-shrink-0">☑</span><p class="text-gray-200 text-lg">Vive sobrecarregada (mãe + profissional + casa) sem tempo sobrando pra cuidar de você</p></div>
-            <div class="flex items-start gap-3"><span class="orange text-xl mt-0.5 flex-shrink-0">☑</span><p class="text-gray-200 text-lg">Sente que está fazendo tudo "certo" e mesmo assim a energia não volta</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Dorme as 8 horas certinho, mas acorda tão cansada quanto quando foi dormir</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Já tentou dieta, suplemento, dormir mais — e nada resolveu de verdade</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Depende de café e açúcar só pra conseguir funcionar até o fim do dia</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Vive sobrecarregada (mãe + profissional + casa) sem tempo sobrando pra cuidar de você</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Sente que está fazendo tudo "certo" e mesmo assim a energia não volta</p></div>
         </div>
     </div>
 </section>
 
 <!-- BLOCO 4 — TRANSIÇÃO -->
-<section class="px-4 py-10">
+<section class="section-cream px-4 py-10">
     <div class="max-w-2xl mx-auto text-center">
-        <p class="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed">
-            Isso não é falta de sono, é sono que não descansa. E é por isso que existe o
-            <span class="orange font-bold"> Protocolo Livre do Cansaço.</span>
+        <p class="text-xl md:text-2xl font-medium leading-relaxed" style="color:var(--ink)">
+            Isso não é falta de sono, é sono que não descansa. Você já tentou dieta, suplemento, dormir mais — mas na <strong>ordem errada</strong>, nada resolve de verdade. Existe uma ordem certa pra isso, e é ela que ativa o
+            <em class="clay serif-em"> Protocolo Livre do Cansaço.</em>
         </p>
     </div>
 </section>
 
-<!-- BLOCO 5 — PASSO A PASSO -->
-<section class="section-alt px-4 py-12">
+<!-- BLOCO 5 — PASSO A PASSO (Ordem Certa da Energia) -->
+<section class="section-dark px-4 py-12">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Os <span class="orange">3 Ajustes</span> que atacam a raiz do problema</h2>
-        <div class="grid md:grid-cols-3 gap-4">
-            <div class="card rounded-xl p-5">
-                <div class="step-num w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-3">1</div>
-                <h3 class="font-bold text-lg mb-1">Ajuste Metabólico</h3>
-                <p class="text-gray-400">Corrige a glicemia desregulada que causa os picos e quedas de energia durante o dia.</p>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">A <span style="color:var(--sand-500)">Ordem Certa da Energia</span></h2>
+        <p class="text-center mb-10" style="color:var(--stone-300)">3 passos. Fora de ordem, não funcionam. Nessa ordem, o efeito é em cadeia.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">01</div>
+                <h3 class="font-bold text-lg mb-1">Estabilize a Glicemia</h3>
+                <p style="color:var(--stone-300)">Corrige a glicemia desregulada que causa os picos e quedas de energia durante o dia.</p>
             </div>
-            <div class="card rounded-xl p-5">
-                <div class="step-num w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-3">2</div>
-                <h3 class="font-bold text-lg mb-1">Ajuste Hormonal</h3>
-                <p class="text-gray-400">Reduz o cortisol alto que mantém seu corpo em modo sobrevivência mesmo enquanto você dorme.</p>
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">02</div>
+                <h3 class="font-bold text-lg mb-1">Reduza o Cortisol</h3>
+                <p style="color:var(--stone-300)">Reduz o cortisol alto que mantém seu corpo em modo sobrevivência mesmo enquanto você dorme.</p>
             </div>
-            <div class="card rounded-xl p-5">
-                <div class="step-num w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-3">3</div>
-                <h3 class="font-bold text-lg mb-1">Ajuste Comportamental</h3>
-                <p class="text-gray-400">Elimina a sobrecarga mental e o excesso de decisões que drenam sua energia sem você perceber.</p>
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">03</div>
+                <h3 class="font-bold text-lg mb-1">Elimine a Sobrecarga Mental</h3>
+                <p style="color:var(--stone-300)">Elimina o excesso de decisões que drenam sua energia sem você perceber.</p>
             </div>
         </div>
-        <p class="text-gray-400 mt-6 text-center">Aplicados em sequência ao longo de 7 dias — 10 a 20 minutos por dia.</p>
+        <p class="mt-8 text-center" style="color:var(--stone-300)">Nessa ordem, ao longo de 7 dias — 10 a 20 minutos por dia. Trocar a ordem é o que fez suas tentativas anteriores não funcionarem.</p>
     </div>
 </section>
 
 <!-- BLOCO 6 — TUDO QUE VAI RECEBER -->
-<section class="px-4 py-12">
+<section class="section-cream px-4 py-12">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">Veja tudo que você vai receber pra <span class="orange">eliminar o cansaço:</span></h2>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2" style="color:var(--ink)">Veja tudo que você vai receber pra <em class="clay serif-em">eliminar o cansaço:</em></h2>
         <div class="grid md:grid-cols-2 gap-4 mt-8">
-            <div class="price-card rounded-xl p-5">
+            <div class="card rounded-xl p-5">
                 <div class="text-3xl mb-2">🎬</div>
-                <h3 class="font-bold text-lg mb-1">3 Vídeos Estratégicos</h3>
-                <p class="text-gray-400">Os 3 Ajustes aplicados na prática. Você começa a ver diferença no primeiro dia.</p>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">3 Vídeos Estratégicos</h3>
+                <p class="muted">A Ordem Certa da Energia aplicada na prática, passo a passo. Você começa a ver diferença no primeiro dia.</p>
             </div>
-            <div class="price-card rounded-xl p-5">
+            <div class="card rounded-xl p-5">
                 <div class="text-3xl mb-2">📋</div>
-                <h3 class="font-bold text-lg mb-1">Protocolo Hábitos 7D</h3>
-                <p class="text-gray-400">Protocolo dia a dia completo. Exatamente o que fazer em cada dia da semana.</p>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">Protocolo Hábitos 7D</h3>
+                <p class="muted">Protocolo dia a dia completo. Exatamente o que fazer em cada dia da semana.</p>
             </div>
-            <div class="price-card rounded-xl p-5">
+            <div class="card rounded-xl p-5">
                 <div class="text-3xl mb-2">📱</div>
-                <h3 class="font-bold text-lg mb-1">Checklist Diário + Planilha</h3>
-                <p class="text-gray-400">Acompanhe seu progresso e mantenha o foco durante os 7 dias.</p>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">Checklist Diário + Planilha</h3>
+                <p class="muted">Acompanhe seu progresso e mantenha o foco durante os 7 dias.</p>
             </div>
-            <div class="price-card rounded-xl p-5">
+            <div class="card rounded-xl p-5">
                 <div class="text-3xl mb-2">🎁</div>
-                <h3 class="font-bold text-lg mb-1 orange">EXTRA: Farmácia Rápida SOS Cansaço</h3>
-                <p class="text-gray-400">Suplementos que realmente funcionam (e quais ignorar). Sem suposição.</p>
+                <h3 class="font-bold text-lg mb-1 clay">EXTRA: Farmácia Rápida SOS Cansaço</h3>
+                <p class="muted">Suplementos que realmente funcionam (e quais ignorar). Sem suposição.</p>
             </div>
-            <div class="price-card rounded-xl p-5 md:col-span-2">
+            <div class="card rounded-xl p-5 md:col-span-2">
                 <div class="text-3xl mb-2">🎁</div>
-                <h3 class="font-bold text-lg mb-1 orange">EXTRA: Checklist Mobile Compacto</h3>
-                <p class="text-gray-400">Versão pocket dos hábitos 7D para você ter sempre no celular.</p>
+                <h3 class="font-bold text-lg mb-1 clay">EXTRA: Checklist Mobile Compacto</h3>
+                <p class="muted">Versão pocket dos hábitos 7D para você ter sempre no celular.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- BLOCO 7 — PRA QUEM SERVE -->
-<section class="section-alt px-4 py-12">
+<section class="section-sand px-4 py-12">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">O Protocolo Livre do Cansaço 7D foi feito para <span class="orange">mulheres que…</span></h2>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">O Protocolo Livre do Cansaço 7D foi feito para <em class="clay serif-em">mulheres que…</em></h2>
         <div class="grid md:grid-cols-2 gap-4">
             <div class="card rounded-xl p-5">
-                <p class="text-gray-200 leading-relaxed">Já tentaram de tudo. Já fizeram dietas. Já tomaram suplementos. Já dormiram 8 horas. Mas continuam cansadas. Exaustas. Sem energia real. E sem saber como sair desse ciclo.</p>
+                <p class="leading-relaxed" style="color:var(--ink)">Já tentaram de tudo. Já fizeram dietas. Já tomaram suplementos. Já dormiram 8 horas. Mas continuam cansadas. Exaustas. Sem energia real. E sem saber como sair desse ciclo.</p>
             </div>
             <div class="card rounded-xl p-5">
-                <p class="text-gray-200 leading-relaxed">Vivem sobrecarregadas (mãe + profissional + casa) e buscam energia sustentável sem dieta maluca, sem rotina impossível, e sem culpa.</p>
+                <p class="leading-relaxed" style="color:var(--ink)">Vivem sobrecarregadas (mãe + profissional + casa) e buscam energia sustentável sem dieta maluca, sem rotina impossível, e sem culpa.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- BLOCO 8 — ANCORAGEM DE PREÇO -->
-<section class="px-4 py-10">
+<section class="section-cream px-4 py-10">
     <div class="max-w-2xl mx-auto text-center">
-        <p class="text-gray-300 text-lg mb-3">Um programa de saúde integral com esse mesmo nível de protocolo custaria facilmente <span class="strike text-gray-400">R$197</span> — e ainda assim não teria metade do que você recebe aqui: 3 vídeos estratégicos, protocolo dia a dia, checklist, planilha de monitoramento e 2 extras.</p>
-        <p class="text-gray-200 text-lg font-semibold">Hoje, o investimento é simbólico — por três razões que você vai entender já já.</p>
+        <p class="muted text-lg mb-3">Um programa de saúde integral com esse mesmo nível de protocolo custaria facilmente <span class="strike">R$197</span> — e ainda assim não teria metade do que você recebe aqui: 3 vídeos estratégicos, protocolo dia a dia, checklist, planilha de monitoramento e 2 extras.</p>
+        <p class="text-lg font-semibold" style="color:var(--ink)">Hoje, o investimento é simbólico — por três razões que você vai entender já já.</p>
     </div>
 </section>
 
 <!-- BLOCO 9 — PRIMEIRO BOTÃO + TUDÃO -->
-<section id="price" class="px-4 py-10">
+<section id="price" class="section-cream px-4 py-10">
     <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
-        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
-        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">76% de desconto</div>
+        <p class="text-center font-semibold mb-2" style="color:var(--ink)">Investimento</p>
+        <div class="badge-urgency text-center py-1 px-4 rounded-full font-bold mb-4 mx-auto w-fit">76% de desconto</div>
         <div class="text-center mb-5">
-            <span class="text-gray-400 text-2xl strike">DE R$197</span>
-            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="orange">47</span><span class="text-3xl">,00</span></div>
+            <span class="strike text-2xl">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-semibold mt-1 serif"><span class="urgency">R$47</span><span class="text-3xl" style="color:var(--ink)">,00</span></div>
         </div>
         <ul class="space-y-2 mb-6">
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> 3 Vídeos Estratégicos (3 Ajustes aplicados na prática)</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> Protocolo dia a dia completo Hábitos 7D</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">✅</span> Checklist Diário + Planilha de Monitoramento</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">🎁</span> EXTRA: Farmácia Rápida SOS Cansaço</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange text-xl">🎁</span> EXTRA: Checklist Mobile Compacto</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> 3 Vídeos Estratégicos (a Ordem Certa aplicada na prática)</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> Protocolo dia a dia completo Hábitos 7D</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> Checklist Diário + Planilha de Monitoramento</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">🎁</span> EXTRA: Farmácia Rápida SOS Cansaço</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">🎁</span> EXTRA: Checklist Mobile Compacto</li>
         </ul>
-        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
-        <p class="text-center text-gray-500 text-xs mt-3">Acesso imediato após a compra · Pagamento 100% seguro</p>
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center font-bold text-lg py-4">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
+        <p class="text-center text-xs mt-3" style="color:var(--stone-500)">Acesso imediato após a compra · Pagamento 100% seguro</p>
     </div>
 </section>
 
 <!-- BLOCO 10 — CONVERSA SÉRIA (único bloco com texto corrido) -->
-<section class="section-alt px-4 py-12">
+<section class="section-dark px-4 py-12">
     <div class="max-w-3xl mx-auto">
         <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Por que tão barato? Vamos ser diretas.</h2>
-        <div class="price-card rounded-2xl p-6 md:p-8">
-            <p class="text-gray-300 mb-4">Você provavelmente já comprou algum "curso de saúde" de R$ 97 ou R$ 197, certo? E o que recebeu?</p>
-            <div class="space-y-2 mb-6 text-gray-300">
+        <div class="rounded-2xl p-6 md:p-8" style="background:rgba(247,241,230,0.06); border:1px solid rgba(247,241,230,0.15)">
+            <p class="mb-4" style="color:var(--stone-300)">Você provavelmente já comprou algum "curso de saúde" de R$ 97 ou R$ 197, certo? E o que recebeu?</p>
+            <div class="space-y-2 mb-6" style="color:var(--stone-300)">
                 <p>❌ 3 horas de vídeo genérico sobre "autocuidado" e "amor próprio"</p>
                 <p>❌ Tabelas de alimentos que você já conhece</p>
                 <p>❌ Teoria motivacional que não resolve nada</p>
                 <p>❌ Zero protocolo aplicável, científico ou que funciona de verdade</p>
             </div>
-            <p class="text-gray-200 mb-5">Vamos fazer uma conta rápida. Um café mais forte pra aguentar o pique custa em média R$8. Todo dia. São R$240 por mês — quase 5x o valor desse protocolo — só pra continuar funcionando cansada, sem resolver a causa. E o café nem resolve: ele empresta energia que você paga com juros lá pelas 15h.</p>
-            <p class="text-gray-200 mb-5">A decisão não é entre gastar R$47 ou economizar. É entre continuar pagando R$240 por mês pra tapar o buraco, ou investir R$47 uma vez pra consertar o que tá causando o buraco.</p>
-            <p class="font-bold orange mb-3">Nós fizemos diferente.</p>
-            <p class="text-gray-200 mb-5">O Protocolo Livre do Cansaço 7D é direto ao ponto: o protocolo exato, científico e aplicável. Sem enrolação. Sem teoria desnecessária.</p>
+            <p class="mb-5" style="color:var(--cream-50)">Vamos fazer uma conta rápida. Um café mais forte pra aguentar o pique custa em média R$8. Todo dia. São R$240 por mês — quase 5x o valor desse protocolo — só pra continuar funcionando cansada, sem resolver a causa. E o café nem resolve: ele empresta energia que você paga com juros lá pelas 15h.</p>
+            <p class="mb-5" style="color:var(--cream-50)">A decisão não é entre gastar R$47 ou economizar. É entre continuar pagando R$240 por mês pra tapar o buraco, ou investir R$47 uma vez pra consertar o que tá causando o buraco.</p>
+            <p class="font-bold mb-3" style="color:var(--sand-500)">Nós fizemos diferente.</p>
+            <p class="mb-5" style="color:var(--cream-50)">O Protocolo Livre do Cansaço 7D é direto ao ponto: o protocolo exato, científico e aplicável. Sem enrolação. Sem teoria desnecessária.</p>
             <p class="font-bold mb-4">O valor é puramente simbólico por três razões:</p>
             <div class="space-y-3">
-                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você aplica pelo menos 1 dos 3 ajustes — e isso já pode mudar sua energia no dia seguinte.</p></div>
-                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você conhece o meu sistema na prática — a mesma metodologia IIN que usei comigo e uso com minhas clientes.</p></div>
-                <div class="flex items-start gap-2"><span class="orange font-bold mt-1 flex-shrink-0">✅</span><p class="text-gray-200">Você entende se faz sentido trabalharmos juntas de forma mais profunda depois.</p></div>
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você começa a aplicar a Ordem Certa — e mesmo só o passo 1, sozinho, já pode mudar sua energia no dia seguinte.</p></div>
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você conhece o meu sistema na prática — a mesma metodologia IIN que usei comigo e uso com minhas clientes.</p></div>
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você entende se faz sentido trabalharmos juntas de forma mais profunda depois.</p></div>
             </div>
-            <div class="mt-6 p-4 bg-orange-400/10 border border-orange-400/30 rounded-xl">
-                <p class="font-bold orange">A razão real? Credibilidade.</p>
-                <p class="text-gray-300 mt-2">Quero que você veja resultados reais, entenda o quanto um ajuste pode transformar sua energia, e decida com clareza se quer seguir comigo em programas mais avançados. Sem pegadinhas. Sem promessas milagrosas.</p>
+            <div class="mt-6 p-4 rounded-xl" style="background:rgba(191,92,42,0.15); border:1px solid rgba(191,92,42,0.4)">
+                <p class="font-bold" style="color:var(--accent-orange-soft)">A razão real? Credibilidade.</p>
+                <p class="mt-2" style="color:var(--cream-50)">Quero que você veja resultados reais, entenda o quanto um ajuste pode transformar sua energia, e decida com clareza se quer seguir comigo em programas mais avançados. Sem pegadinhas. Sem promessas milagrosas.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-4 mt-8 text-left">
-                <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
-                    <p class="text-red-400 font-bold text-lg mb-2">❌ Opção 1</p>
-                    <p class="text-gray-300">Continuar vivendo de café, açúcar e força de vontade.</p>
+                <div class="rounded-xl p-5" style="background:rgba(140,63,44,0.15); border:1px solid rgba(140,63,44,0.4)">
+                    <p class="font-bold text-lg mb-2" style="color:#d99a86">❌ Opção 1</p>
+                    <p style="color:var(--stone-300)">Continuar vivendo de café, açúcar e força de vontade.</p>
                 </div>
-                <div class="bg-orange-500/10 border border-orange-500/30 rounded-xl p-5">
-                    <p class="orange font-bold text-lg mb-2">✅ Opção 2</p>
-                    <p class="text-gray-300">Investir R$ 47 e aprender a recuperar energia de verdade.</p>
+                <div class="rounded-xl p-5" style="background:rgba(191,92,42,0.15); border:1px solid rgba(191,92,42,0.4)">
+                    <p class="font-bold text-lg mb-2" style="color:var(--accent-orange-soft)">✅ Opção 2</p>
+                    <p style="color:var(--stone-300)">Investir R$ 47 e aprender a recuperar energia de verdade.</p>
                 </div>
             </div>
         </div>
@@ -265,92 +267,92 @@
 </section>
 
 <!-- BLOCO 11 — AUTORIDADE -->
-<section class="px-4 py-12">
+<section class="section-cream px-4 py-12">
     <div class="max-w-4xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Quem será sua <span class="orange">mentora?</span></h2>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Quem será sua <em class="clay serif-em">mentora?</em></h2>
         <div class="flex flex-col md:flex-row items-center gap-8">
-            <img src="/public/images/ailin-foto.jpeg" alt="Ailin Orioni" class="w-40 md:w-52 rounded-2xl flex-shrink-0 object-cover">
+            <img src="/public/images/ailin-foto.jpeg" alt="Ailin Orioni" class="w-40 md:w-52 flex-shrink-0 object-cover" style="border-radius:10px">
             <div>
-                <h3 class="text-2xl font-extrabold orange mb-3">AILIN ORIONI</h3>
-                <p class="text-gray-200 mb-3"><strong>Especialista em saúde integral feminina e certificada pelo Institute for Integrative Nutrition (IIN)</strong> – a maior escola de health coaching do mundo.</p>
-                <p class="text-gray-300 mb-3">Ailin viveu na própria pele o que é exaustão crônica. Executiva corporativa no auge da carreira, passou por 4 países e 3 carreiras diferentes até entender que o problema não era disciplina — era sistema errado.</p>
-                <p class="text-gray-300 mb-3">Aos 30 anos, largou tudo para reconstruir sua saúde do zero. Maternidade na pandemia, sem rede de apoio, em país estrangeiro. Foi aí que ela descobriu o método IIN e recuperou sua energia através de hábitos simples baseados em ciência.</p>
-                <p class="text-gray-300 mb-3">Hoje, mora no México com a filha Ana, ajuda mulheres sobrecarregadas a recuperarem energia sem dieta maluca, sem rotina impossível e sem culpa. Sua abordagem combina cronobiologia, nutrição funcional e neurociência comportamental aplicada à vida real.</p>
-                <p class="text-gray-300 mb-4">Já transformou a energia de dezenas de mulheres que achavam que o problema era "falta de força de vontade", quando na verdade era falta de estrutura científica que coubesse na rotina caótica delas.</p>
-                <p class="orange italic">"Não é sobre perfeição, é sobre hábitos simples que você CONSEGUE manter. Energia não se força, energia se constrói."</p>
+                <h3 class="text-2xl font-bold clay mb-3">AILIN ORIONI</h3>
+                <p class="mb-3" style="color:var(--ink)"><strong>Especialista em saúde integral feminina e certificada pelo Institute for Integrative Nutrition (IIN)</strong> – a maior escola de health coaching do mundo.</p>
+                <p class="muted mb-3">Ailin viveu na própria pele o que é exaustão crônica. Executiva corporativa no auge da carreira, passou por 4 países e 3 carreiras diferentes até entender que o problema não era disciplina — era sistema errado.</p>
+                <p class="muted mb-3">Aos 30 anos, largou tudo para reconstruir sua saúde do zero. Maternidade na pandemia, sem rede de apoio, em país estrangeiro. Foi aí que ela descobriu o método IIN e recuperou sua energia através de hábitos simples baseados em ciência.</p>
+                <p class="muted mb-3">Hoje, mora no México com a filha Ana, ajuda mulheres sobrecarregadas a recuperarem energia sem dieta maluca, sem rotina impossível e sem culpa. Sua abordagem combina cronobiologia, nutrição funcional e neurociência comportamental aplicada à vida real.</p>
+                <p class="muted mb-4">Já transformou a energia de dezenas de mulheres que achavam que o problema era "falta de força de vontade", quando na verdade era falta de estrutura científica que coubesse na rotina caótica delas.</p>
+                <p class="clay" style="font-style:italic">"Não é sobre perfeição, é sobre hábitos simples que você CONSEGUE manter. Energia não se força, energia se constrói."</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- BLOCO 12 — SEGUNDO BOTÃO -->
-<section class="px-4 py-12">
+<section class="section-cream px-4 py-12">
     <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
-        <p class="text-center text-gray-300 font-semibold mb-2">Investimento</p>
-        <div class="badge text-center py-1 px-4 rounded-full text-sm font-bold mb-4 mx-auto w-fit">76% de desconto</div>
+        <p class="text-center font-semibold mb-2" style="color:var(--ink)">Investimento</p>
+        <div class="badge-urgency text-center py-1 px-4 rounded-full font-bold mb-4 mx-auto w-fit">76% de desconto</div>
         <div class="text-center mb-5">
-            <span class="text-gray-400 text-2xl strike">DE R$197</span>
-            <div class="text-5xl md:text-6xl font-extrabold mt-1">R$<span class="orange">47</span><span class="text-3xl">,00</span></div>
+            <span class="strike text-2xl">DE R$197</span>
+            <div class="text-5xl md:text-6xl font-semibold mt-1 serif"><span class="urgency">R$47</span><span class="text-3xl" style="color:var(--ink)">,00</span></div>
         </div>
         <ul class="space-y-2 mb-6">
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> 3 Vídeos Estratégicos (3 Ajustes aplicados na prática)</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> Protocolo dia a dia completo Hábitos 7D</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange">✅</span> Checklist Diário + Planilha de Monitoramento</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange">🎁</span> EXTRA: Farmácia Rápida SOS Cansaço</li>
-            <li class="flex items-center gap-2 text-gray-200"><span class="orange">🎁</span> EXTRA: Checklist Mobile Compacto</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> 3 Vídeos Estratégicos (a Ordem Certa aplicada na prática)</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> Protocolo dia a dia completo Hábitos 7D</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> Checklist Diário + Planilha de Monitoramento</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>🎁</span> EXTRA: Farmácia Rápida SOS Cansaço</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>🎁</span> EXTRA: Checklist Mobile Compacto</li>
         </ul>
-        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center text-white font-extrabold text-lg py-4 rounded-xl">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
-        <p class="text-center text-gray-500 text-xs mt-3">Acesso imediato após a compra · Pagamento 100% seguro</p>
+        <a href="https://sun.eduzz.com/E9OOYK5K9B?cupom=PAC" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center font-bold text-lg py-4">⚡ QUERO RECUPERAR MINHA ENERGIA</a>
+        <p class="text-center text-xs mt-3" style="color:var(--stone-500)">Acesso imediato após a compra · Pagamento 100% seguro</p>
     </div>
 </section>
 
 <!-- BLOCO 13 — FAQ -->
-<section class="px-4 py-12">
+<section class="section-cream px-4 py-12">
     <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8"><span class="orange">Perguntas</span> frequentes</h2>
-        <div class="divide-y divide-white/10">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)"><em class="clay serif-em">Perguntas</em> frequentes</h2>
+        <div class="divide-y" style="border-color:var(--stone-300)">
             <div class="py-4">
                 <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-base md:text-lg">Funciona com rotina caótica (trabalho + casa + filhos)?</span>
-                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Funciona com rotina caótica (trabalho + casa + filhos)?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
                 </button>
-                <div class="faq-answer pt-2 text-gray-300">
-                    <p>Sim. O protocolo foi feito PARA rotina caótica. Os 3 ajustes levam entre 10-20 minutos por dia — menos que o tempo que você passa no Instagram.</p>
+                <div class="faq-answer pt-2 muted">
+                    <p>Sim. O protocolo foi feito PARA rotina caótica. Os 3 passos da Ordem Certa levam entre 10-20 minutos por dia — menos que o tempo que você passa no Instagram.</p>
                 </div>
             </div>
             <div class="py-4">
                 <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-base md:text-lg">Funciona se eu já tentei "tudo" e nada deu certo?</span>
-                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Funciona se eu já tentei "tudo" e nada deu certo?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
                 </button>
-                <div class="faq-answer pt-2 text-gray-300">
+                <div class="faq-answer pt-2 muted">
                     <p>Sim. O problema nunca foi falta de tentativa — foi ausência de protocolo científico. O Protocolo ataca a raiz metabólica (glicemia e cortisol), que é o que nenhum curso de "autocuidado" toca.</p>
                 </div>
             </div>
             <div class="py-4">
                 <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-base md:text-lg">Preciso fazer dieta restritiva ou rotina de 2 horas?</span>
-                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Preciso fazer dieta restritiva ou rotina de 2 horas?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
                 </button>
-                <div class="faq-answer pt-2 text-gray-300">
-                    <p>Não. O protocolo foi criado para caber em rotinas reais — sem dieta maluca e sem 2 horas de rituais matinais. São 3 ajustes simples que você encaixa no que já faz.</p>
+                <div class="faq-answer pt-2 muted">
+                    <p>Não. O protocolo foi criado para caber em rotinas reais — sem dieta maluca e sem 2 horas de rituais matinais. São 3 passos simples, na ordem certa, que você encaixa no que já faz.</p>
                 </div>
             </div>
             <div class="py-4">
                 <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-base md:text-lg">Funciona mesmo em 7 dias?</span>
-                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Funciona mesmo em 7 dias?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
                 </button>
-                <div class="faq-answer pt-2 text-gray-300">
-                    <p>Sim. Os ajustes do protocolo agem em cadeia: o primeiro estabiliza glicemia, o segundo reduz cortisol, o terceiro elimina decisões desnecessárias. Juntos, o efeito é perceptível nos primeiros dias.</p>
+                <div class="faq-answer pt-2 muted">
+                    <p>Sim — mas só nessa ordem. Os 3 passos agem em cadeia: o primeiro estabiliza glicemia, o segundo reduz cortisol, o terceiro elimina decisões desnecessárias. Inverter a ordem quebra o efeito; nessa sequência, ele é perceptível nos primeiros dias.</p>
                 </div>
             </div>
             <div class="py-4">
                 <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
-                    <span class="font-semibold text-base md:text-lg">Como funciona o pagamento e o acesso?</span>
-                    <span class="faq-icon orange text-2xl flex-shrink-0">+</span>
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Como funciona o pagamento e o acesso?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
                 </button>
-                <div class="faq-answer pt-2 text-gray-300">
+                <div class="faq-answer pt-2 muted">
                     <p>Pagamento 100% seguro via Eduzz (cartão, PIX ou boleto). O acesso é liberado imediatamente após a confirmação — você recebe por e-mail e já pode começar.</p>
                 </div>
             </div>
@@ -359,9 +361,9 @@
 </section>
 
 <!-- BLOCO 14 — RODAPÉ -->
-<footer class="px-4 py-6 border-t border-white/10 text-center text-gray-600 text-sm">
+<footer class="px-4 py-6 text-center text-sm" style="background:var(--paper); border-top:1px solid var(--stone-300); color:var(--stone-500)">
     <p>Ailin Orioni © 2026 – Todos os Direitos Reservados</p>
-    <p class="mt-1">Suporte: <a href="mailto:contato@ailinorioni.com" class="text-gray-500 underline">contato@ailinorioni.com</a></p>
+    <p class="mt-1">Suporte: <a href="mailto:contato@ailinorioni.com" class="underline" style="color:var(--ink-soft)">contato@ailinorioni.com</a></p>
 </footer>
 
 <script>

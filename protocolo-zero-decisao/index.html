@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Zero Decisão – Ailin Orioni</title>
+    <meta name="description" content="Recupere sua energia em 7 dias sem precisar decidir nada. O Protocolo Zero Decisão elimina a fadiga de decisão — você só executa.">
+    <!-- Meta Pixel Code (reaproveitado — avaliar isolamento antes de escalar tráfego, ver nota no handoff) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '850976250814866');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=850976250814866&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400..600;1,400..600&family=Work+Sans:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --ink:#2b2621; --ink-soft:#4a4238;
+            --olive-900:#33362b; --olive-700:#4a4d3c; --olive-500:#6e7a63;
+            --clay-700:#7a4a30; --clay-500:#a3603a; --clay-300:#c98f63;
+            --sand-500:#c9ae82; --sand-300:#e2d3b6;
+            --stone-500:#a79a82; --stone-300:#cdc3ae;
+            --cream-100:#f7f1e6; --cream-50:#fbf7ef; --paper:#fffdf8;
+            --accent-orange:#bf5c2a; --accent-orange-soft:#e8c9a8;
+        }
+        body { font-family: 'Work Sans', -apple-system, Helvetica, Arial, sans-serif; background: var(--cream-100); color: var(--ink); }
+        h1, h2, h3 { font-family: 'Work Sans', -apple-system, Helvetica, Arial, sans-serif; letter-spacing: -0.01em; }
+        .serif-em { font-family: 'Newsreader', Georgia, serif; font-style: italic; }
+        .serif { font-family: 'Newsreader', Georgia, serif; }
+        .section-cream { background: var(--cream-100); }
+        .section-sand { background: var(--sand-300); }
+        .section-dark { background: var(--olive-900); color: var(--cream-50); }
+        .card { background: var(--paper); border: 1px solid var(--stone-300); box-shadow: 0 1px 3px rgba(43,38,33,0.08); }
+        .price-card { background: var(--paper); border: 1px solid var(--stone-300); box-shadow: 0 6px 20px rgba(43,38,33,0.10); }
+        .badge { background: var(--sand-300); color: var(--ink); letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
+        .badge-urgency { background: var(--accent-orange); color: var(--cream-50); letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
+        .cta-btn { background: var(--clay-500); color: var(--cream-50); border-radius: 4px; transition: background 150ms ease; display: inline-block; }
+        .cta-btn:hover { background: var(--clay-700); }
+        .strike { text-decoration: line-through; color: var(--stone-500); }
+        .clay { color: var(--clay-700); }
+        .urgency { color: var(--accent-orange); }
+        .muted { color: var(--ink-soft); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-answer.open { max-height: 400px; }
+        .faq-icon { transition: transform 0.3s; display: inline-block; }
+        .faq-icon.open { transform: rotate(45deg); }
+        .step-num { font-family: 'Newsreader', Georgia, serif; color: var(--sand-500); font-size: 2rem; }
+        .placeholder-block { background: repeating-linear-gradient(45deg, var(--sand-300), var(--sand-300) 10px, var(--cream-100) 10px, var(--cream-100) 20px); border: 2px dashed var(--clay-500); }
+    </style>
+</head>
+<body>
+
+<!-- BLOCO 1 — VENDER SOZINHO (primeira dobra) — SEM botão -->
+<section class="section-cream px-4 py-10 md:py-16">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="badge inline-block px-3 py-1 rounded-full font-semibold mb-4">⚡ O Protocolo Zero Decisão · 7 dias</div>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4" style="color:var(--ink)">
+                    Recupere sua energia em 7 dias sem precisar <em class="clay serif-em">decidir</em> nada.
+                </h1>
+                <p class="muted text-lg mb-6">Você já sabe o que precisa fazer. O que te esgota é decidir O QUÊ, QUANDO e EM QUE ORDEM — o dia inteiro. O Protocolo Zero Decisão elimina a decisão: sobra só executar.</p>
+                <ul class="space-y-2 mb-2">
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Sem precisar pensar em nada novo</li>
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Sem rotina complicada</li>
+                    <li class="flex items-center gap-2" style="color:var(--ink)"><span style="color:var(--olive-700)">✓</span> Baseado em ciência do comportamento, não força de vontade</li>
+                </ul>
+            </div>
+            <div class="flex-shrink-0 order-1 md:order-2">
+                <img src="/public/images/ailin-hero-real2.jpg" alt="Ailin Orioni" class="w-56 md:w-72 lg:w-80 mx-auto object-cover aspect-[4/5]" style="border-radius:10px; box-shadow:0 16px 40px rgba(43,38,33,0.14); object-position: 75% 15%">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 2 — DEPOIMENTOS — PENDENTE: produto novo, sem comprador real ainda. NAO preencher com depoimento inventado. -->
+<section class="section-sand px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Quem já aplicou <em class="clay serif-em">diz isso:</em></h2>
+        <div class="placeholder-block rounded-2xl p-8 text-center">
+            <p class="font-bold mb-2" style="color:var(--clay-700)">⚠ BLOCO PENDENTE</p>
+            <p class="muted">Entra aqui assim que tivermos as primeiras compradoras reais. Não preencher com depoimento inventado — trocar por print real (estilo WhatsApp) assim que existir.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 3 — DOR LATENTE -->
+<section class="section-cream px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Isso aqui é <em class="clay serif-em">você?</em></h2>
+        <div class="card rounded-2xl p-6 md:p-8 space-y-4">
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Depende de café e açúcar só pra conseguir funcionar até o fim do dia</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Não aguenta mais decidir o que vai fazer pro jantar</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Chega em casa e não tem paciência nem pra decidir que roupa vestir amanhã</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Sabe tudo que tem que fazer, só não sabe por onde começar</p></div>
+            <div class="flex items-start gap-3"><span class="text-xl mt-0.5 flex-shrink-0" style="color:var(--olive-700)">☑</span><p class="text-lg" style="color:var(--ink)">Vive no automático — mas um automático que também cansa</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 4 — TRANSIÇÃO -->
+<section class="section-cream px-4 py-10">
+    <div class="max-w-2xl mx-auto text-center">
+        <p class="text-xl md:text-2xl font-medium leading-relaxed" style="color:var(--ink)">
+            Não é falta de força de vontade. Toda decisão, por menor que seja, gasta a mesma energia mental que uma decisão grande — e você toma centenas por dia. É por isso que existe o
+            <em class="clay serif-em"> Protocolo Zero Decisão.</em>
+        </p>
+    </div>
+</section>
+
+<!-- BLOCO 5 — PASSO A PASSO (mecanismo) -->
+<section class="section-dark px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2">O <span style="color:var(--sand-500)">Protocolo Zero Decisão</span></h2>
+        <p class="text-center mb-10" style="color:var(--stone-300)">Ele decide por você. Você só executa.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">O QUÊ</div>
+                <h3 class="font-bold text-lg mb-1">Já está definido</h3>
+                <p style="color:var(--stone-300)">Você não escolhe o que fazer — a lista já vem pronta. Zero tempo gasto decidindo.</p>
+            </div>
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">QUANDO</div>
+                <h3 class="font-bold text-lg mb-1">Já tem hora certa</h3>
+                <p style="color:var(--stone-300)">Cada coisa no seu horário — sem precisar decidir "faço agora ou depois".</p>
+            </div>
+            <div style="border-top:1px solid rgba(247,241,230,0.3); padding-top:20px;">
+                <div class="step-num mb-3">EM QUE ORDEM</div>
+                <h3 class="font-bold text-lg mb-1">Já vem montada</h3>
+                <p style="color:var(--stone-300)">A sequência já está pronta — você não perde energia organizando, só segue.</p>
+            </div>
+        </div>
+        <p class="mt-8 text-center" style="color:var(--stone-300)">7 dias, 10-20 minutos por dia. A única decisão que você toma é a primeira: começar.</p>
+    </div>
+</section>
+
+<!-- BLOCO 6 — TUDO QUE VAI RECEBER -->
+<section class="section-cream px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-2" style="color:var(--ink)">Veja tudo que você vai receber pra <em class="clay serif-em">parar de decidir e recuperar energia:</em></h2>
+        <div class="grid md:grid-cols-2 gap-4 mt-8">
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎬</div>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">3 Vídeos Estratégicos</h3>
+                <p class="muted">O mecanismo explicado — por que decisão cansa mais que tarefa, e como o protocolo elimina isso.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">📋</div>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">Protocolo Zero Decisão 7D</h3>
+                <p class="muted">A sequência dia a dia pronta: o quê, quando, em que ordem. Você só segue.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">📱</div>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">Checklist Diário de Bolso</h3>
+                <p class="muted">Pra nem precisar abrir nada — só olhar e seguir.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">📊</div>
+                <h3 class="font-bold text-lg mb-1" style="color:var(--ink)">Planilha de Acompanhamento</h3>
+                <p class="muted">Veja seu progresso sem precisar decidir se está indo bem — o dado mostra.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎁</div>
+                <h3 class="font-bold text-lg mb-1 clay">EXTRA: Kit Decisões Prontas</h3>
+                <p class="muted">Cardápio da semana pré-decidido — acaba o "o que vamos comer hoje?".</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <div class="text-3xl mb-2">🎁</div>
+                <h3 class="font-bold text-lg mb-1 clay">EXTRA: Guia SOS</h3>
+                <p class="muted">Pros dias que nem o protocolo dá conta — o mínimo pra não desmoronar.</p>
+            </div>
+            <div class="card rounded-xl p-5 md:col-span-2">
+                <div class="text-3xl mb-2">🎁</div>
+                <h3 class="font-bold text-lg mb-1 clay">EXTRA: Versão Mobile Compacta</h3>
+                <p class="muted">O protocolo inteiro no formato de bolso, pro celular.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 7 — PRA QUEM SERVE -->
+<section class="section-sand px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">O Protocolo Zero Decisão foi feito para <em class="clay serif-em">mulheres que…</em></h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="card rounded-xl p-5">
+                <p class="leading-relaxed" style="color:var(--ink)">Já tentaram de tudo — dieta, suplemento, dormir mais — e sabem exatamente o que "deveriam" fazer. O problema nunca foi saber. Foi decidir, todo santo dia, no meio do cansaço.</p>
+            </div>
+            <div class="card rounded-xl p-5">
+                <p class="leading-relaxed" style="color:var(--ink)">Vivem sobrecarregadas (mãe + profissional + casa) e não têm mais energia sobrando pra tomar mais uma decisão — mesmo as pequenas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 8 — ANCORAGEM DE PREÇO -->
+<section class="section-cream px-4 py-10">
+    <div class="max-w-2xl mx-auto text-center">
+        <p class="muted text-lg mb-3">Somando os 3 vídeos, o protocolo dia a dia, checklist, planilha e os 3 extras separadamente, esse conteúdo facilmente passaria de <span class="strike">R$247</span> — e ainda assim não teria o que faz esse protocolo funcionar: a ordem pronta, sem você precisar decidir nada.</p>
+        <p class="text-lg font-semibold" style="color:var(--ink)">Hoje, o investimento é simbólico — por três razões que você vai entender já já.</p>
+    </div>
+</section>
+
+<!-- BLOCO 9 — PRIMEIRO BOTÃO + TUDÃO -->
+<section id="price" class="section-cream px-4 py-10">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center font-semibold mb-2" style="color:var(--ink)">Investimento</p>
+        <div class="badge-urgency text-center py-1 px-4 rounded-full font-bold mb-4 mx-auto w-fit">73% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="strike text-2xl">DE R$247</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1"><span class="urgency">R$67</span><span class="text-3xl" style="color:var(--ink)">,00</span></div>
+        </div>
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> 3 Vídeos Estratégicos</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> Protocolo Zero Decisão 7D completo</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">✅</span> Checklist Diário + Planilha de Acompanhamento</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">🎁</span> EXTRA: Kit Decisões Prontas</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">🎁</span> EXTRA: Guia SOS</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span class="text-xl">🎁</span> EXTRA: Versão Mobile Compacta</li>
+        </ul>
+        <a href="https://chk.eduzz.com/fxgberzx" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center font-bold text-lg py-4">⚡ QUERO O PROTOCOLO ZERO DECISÃO</a>
+        <p class="text-center text-xs mt-3" style="color:var(--stone-500)">Acesso imediato após a compra · Pagamento 100% seguro</p>
+    </div>
+</section>
+
+<!-- BLOCO 10 — CONVERSA SÉRIA (único bloco com texto corrido) -->
+<section class="section-dark px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8">Por que tão barato? Vamos ser diretas.</h2>
+        <div class="rounded-2xl p-6 md:p-8" style="background:rgba(247,241,230,0.06); border:1px solid rgba(247,241,230,0.15)">
+            <p class="mb-4" style="color:var(--stone-300)">Você provavelmente já comprou algum "curso de produtividade" ou "curso de saúde" de R$97 ou R$197, certo? E o que recebeu?</p>
+            <div class="space-y-2 mb-6" style="color:var(--stone-300)">
+                <p>❌ Mais informação pra você decidir sozinha o que fazer com ela</p>
+                <p>❌ Planilha genérica que você teria que adaptar (mais uma decisão)</p>
+                <p>❌ Teoria motivacional que não resolve nada</p>
+                <p>❌ Zero sequência pronta, aplicável, sem esforço mental extra</p>
+            </div>
+            <p class="text-gray-200 mb-5" style="color:var(--cream-50)">O problema nunca foi falta de informação. Você já sabe o que "deveria" fazer. O que te esgota é decidir, o dia inteiro, o quê, quando e em que ordem. Um protocolo pronto resolve isso — não porque ensina algo novo, mas porque tira a decisão do caminho.</p>
+            <p class="font-bold mb-3" style="color:var(--sand-500)">Nós fizemos diferente.</p>
+            <p class="mb-5" style="color:var(--cream-50)">O Protocolo Zero Decisão é direto ao ponto: a sequência exata, pronta, sem você ter que montar nada. Sem enrolação. Sem teoria desnecessária.</p>
+            <p class="font-bold mb-4">O valor é puramente simbólico por três razões:</p>
+            <div class="space-y-3">
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você começa a seguir o protocolo — e mesmo o primeiro dia, sozinho, já tira uma camada de decisão das suas costas.</p></div>
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você conhece o meu sistema na prática — a mesma metodologia IIN que uso comigo e com minhas clientes.</p></div>
+                <div class="flex items-start gap-2"><span class="font-bold mt-1 flex-shrink-0" style="color:var(--sand-500)">✅</span><p style="color:var(--cream-50)">Você entende se faz sentido trabalharmos juntas de forma mais profunda depois.</p></div>
+            </div>
+            <div class="mt-6 p-4 rounded-xl" style="background:rgba(191,92,42,0.15); border:1px solid rgba(191,92,42,0.4)">
+                <p class="font-bold" style="color:var(--accent-orange-soft)">A razão real? Credibilidade.</p>
+                <p class="mt-2" style="color:var(--cream-50)">Quero que você sinta a diferença de não precisar decidir mais nada, e decida com clareza se quer seguir comigo em programas mais avançados. Sem pegadinhas. Sem promessas milagrosas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 11 — AUTORIDADE -->
+<section class="section-cream px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)">Quem será sua <em class="clay serif-em">mentora?</em></h2>
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <img src="/public/images/ailin-foto.jpeg" alt="Ailin Orioni" class="w-40 md:w-52 flex-shrink-0 object-cover" style="border-radius:10px">
+            <div>
+                <h3 class="text-2xl font-extrabold clay mb-3">AILIN ORIONI</h3>
+                <p class="mb-3" style="color:var(--ink)"><strong>Especialista em saúde integral feminina e certificada pelo Institute for Integrative Nutrition (IIN)</strong> – a maior escola de health coaching do mundo.</p>
+                <p class="muted mb-3">Ailin viveu na própria pele o que é exaustão crônica. Executiva corporativa no auge da carreira, passou por 4 países e 3 carreiras diferentes até entender que o problema não era disciplina — era sistema errado.</p>
+                <p class="muted mb-3">Aos 30 anos, largou tudo para reconstruir sua saúde do zero. Maternidade na pandemia, sem rede de apoio, em país estrangeiro. Foi aí que ela descobriu o método IIN e recuperou sua energia através de hábitos simples baseados em ciência.</p>
+                <p class="muted mb-3">Hoje, mora no México com a filha Ana, ajuda mulheres sobrecarregadas a recuperarem energia sem dieta maluca, sem rotina impossível e sem culpa. Sua abordagem combina cronobiologia, nutrição funcional e neurociência comportamental aplicada à vida real.</p>
+                <p class="muted mb-4">Já transformou a energia de dezenas de mulheres que achavam que o problema era "falta de força de vontade", quando na verdade era falta de estrutura que coubesse na rotina caótica delas.</p>
+                <p class="clay serif-em">"Você não precisa de mais uma decisão pra tomar. Precisa de uma a menos. Energia não se força, energia se protege."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 12 — SEGUNDO BOTÃO -->
+<section class="section-cream px-4 py-12">
+    <div class="max-w-xl mx-auto price-card rounded-2xl p-6 md:p-8">
+        <p class="text-center font-semibold mb-2" style="color:var(--ink)">Investimento</p>
+        <div class="badge-urgency text-center py-1 px-4 rounded-full font-bold mb-4 mx-auto w-fit">73% de desconto</div>
+        <div class="text-center mb-5">
+            <span class="strike text-2xl">DE R$247</span>
+            <div class="text-5xl md:text-6xl font-extrabold mt-1"><span class="urgency">R$67</span><span class="text-3xl" style="color:var(--ink)">,00</span></div>
+        </div>
+        <ul class="space-y-2 mb-6">
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> 3 Vídeos Estratégicos</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> Protocolo Zero Decisão 7D completo</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>✅</span> Checklist Diário + Planilha de Acompanhamento</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>🎁</span> EXTRA: Kit Decisões Prontas</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>🎁</span> EXTRA: Guia SOS</li>
+            <li class="flex items-center gap-2" style="color:var(--ink)"><span>🎁</span> EXTRA: Versão Mobile Compacta</li>
+        </ul>
+        <a href="https://chk.eduzz.com/fxgberzx" onclick="fbq('track','InitiateCheckout')" class="cta-btn block w-full text-center font-bold text-lg py-4">⚡ QUERO O PROTOCOLO ZERO DECISÃO</a>
+        <p class="text-center text-xs mt-3" style="color:var(--stone-500)">Acesso imediato após a compra · Pagamento 100% seguro</p>
+    </div>
+</section>
+
+<!-- BLOCO 13 — FAQ -->
+<section class="section-cream px-4 py-12">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center mb-8" style="color:var(--ink)"><em class="clay serif-em">Perguntas</em> frequentes</h2>
+        <div class="divide-y" style="border-color:var(--stone-300)">
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Isso não é só mais uma "rotina" que eu vou ter que decidir seguir?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 muted">
+                    <p>Não. A diferença é que o protocolo já vem com o quê, quando e em que ordem definidos — você não monta nada, só segue o que já está pronto.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Funciona com rotina caótica (trabalho + casa + filhos)?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 muted">
+                    <p>Sim — foi feito exatamente pra isso. 10-20 minutos por dia, sem exigir nenhuma decisão nova da sua parte.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Já tentei de tudo e nada deu certo. Por que isso seria diferente?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 muted">
+                    <p>Porque o problema nunca foi não saber o que fazer — é ter que decidir, todo dia, no meio do cansaço. Esse protocolo tira a decisão do caminho, não adiciona mais uma coisa pra você gerenciar.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Funciona mesmo em 7 dias?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 muted">
+                    <p>Sim. Como não exige decisão nenhuma, o efeito de alívio começa já no primeiro dia — o protocolo completo de 7 dias consolida o hábito.</p>
+                </div>
+            </div>
+            <div class="py-4">
+                <button class="flex justify-between items-center w-full text-left gap-4" onclick="toggleFaq(this)">
+                    <span class="font-semibold text-base md:text-lg" style="color:var(--ink)">Como funciona o pagamento e o acesso?</span>
+                    <span class="faq-icon clay text-2xl flex-shrink-0">+</span>
+                </button>
+                <div class="faq-answer pt-2 muted">
+                    <p>Pagamento 100% seguro via Eduzz (cartão, PIX ou boleto). O acesso é liberado imediatamente após a confirmação — você recebe por e-mail e já pode começar.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCO 14 — RODAPÉ -->
+<footer class="px-4 py-6 text-center text-sm" style="background:var(--paper); border-top:1px solid var(--stone-300); color:var(--stone-500)">
+    <p>Ailin Orioni © 2026 – Todos os Direitos Reservados</p>
+    <p class="mt-1">Suporte: <a href="mailto:contato@ailinorioni.com" class="underline" style="color:var(--ink-soft)">contato@ailinorioni.com</a></p>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-icon').forEach(i => { i.classList.remove('open'); i.textContent = '+'; });
+    if (!isOpen) {
+        answer.classList.add('open');
+        icon.classList.add('open');
+        icon.textContent = '×';
+    }
+}
+</script>
+</body>
+</html>

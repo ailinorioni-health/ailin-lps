@@ -1,3 +1,10 @@
 {
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/bio",
+      "permanent": false
+    }
+  ]
 }

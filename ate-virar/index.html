@@ -341,6 +341,30 @@ details.faq p{padding:0 2px 18px;font-size:16px;color:var(--tx2);max-width:64ch}
 }
 </style>
 
+<!-- Pixel da Meta. Mesmo ID das outras paginas: 850976250814866.
+     PageView em quem abre; o evento de compra quem dispara e a Eduzz. -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','850976250814866');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=850976250814866&ev=PageView&noscript=1" alt=""></noscript>
+
+<!-- InitiateCheckout quando ela clica em comprar. E o elo que faltava pra medir
+     quem chega no checkout, e nao so quem vira lead. -->
+<script>
+document.addEventListener('click', function(e){
+  var a = e.target.closest && e.target.closest('a.btn');
+  if (!a) return;
+  if (window.fbq) fbq('track','InitiateCheckout',{content_name:'ATE VIRAR',value:147,currency:'BRL'});
+});
+</script>
+
+
 <!-- 1 -->
 <section class="sec esc"><div class="in wide">
   <span class="rot">1 · primeira dobra</span>

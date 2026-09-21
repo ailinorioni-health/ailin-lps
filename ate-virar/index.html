@@ -189,6 +189,27 @@ mark{background:var(--accent-orange-soft);color:var(--ink);padding:.03em .14em;b
   padding:20px 42px;border-radius:8px;text-decoration:none;transition:background .15s}
 .btn:hover{background:var(--clay-700)}
 .btn:focus-visible{outline:3px solid var(--sand-500);outline-offset:3px}
+/* botao da primeira dobra — publico que chega da Roda ja sabe a dor (ver auditoria 21/09) */
+.btn-topo{margin-top:24px}
+.btn-topo .btn{margin-top:0}
+.topo-nota{margin-top:10px;font-size:13.5px;color:var(--sand-500)}
+/* barra fixa — recupera a decisao em qualquer ponto da rolagem */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--olive-900);
+  border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  display:flex;align-items:center;gap:14px;transform:translateY(110%);transition:transform .22s ease;
+  box-shadow:0 -8px 24px rgba(0,0,0,.28)}
+.barra.on{transform:translateY(0)}
+.barra .bt{flex:1;min-width:0}
+.barra .bq{display:block;font-size:14px;font-weight:600;color:#fff;line-height:1.25;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.barra .bd{display:block;font-size:12px;color:var(--sand-500);margin-top:2px}
+.barra .btn{margin-top:0;flex:none;font-size:15px;padding:13px 20px;white-space:nowrap}
+@media (max-width:640px){
+  .barra{padding:9px 12px calc(9px + env(safe-area-inset-bottom));gap:10px}
+  .barra .btn{display:inline-block;width:auto;font-size:14px;padding:12px 16px}
+  .barra .bq{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){.barra{transition:none}}
 .vagas{margin-top:14px;font-size:14.5px;color:var(--sand-500);max-width:50ch;margin-left:auto;margin-right:auto}
 .resumo{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .resumo span{font-size:12.5px;color:var(--sand-300);border:1px solid #4a4d3c;border-radius:999px;padding:5px 12px}
@@ -374,9 +395,13 @@ document.addEventListener('click', function(e){
       <h1>Descubra como não desistir do que você quer, com o menor passo que <em>conta</em></h1>
       <p class="subh">Trinta dias sem largar no meio — com um passo do tamanho do seu <mark>pior dia</mark>.</p>
       <div class="selos">
-        <span class="selo forte"><span class="pt"></span>Turma nova 1º de outubro</span>
+        <span class="selo forte"><span class="pt"></span>Turma nova 2 de novembro</span>
         <span class="selo"><span class="pt"></span>30 dias — começa e termina</span>
         <span class="selo"><span class="pt"></span>No seu WhatsApp, sem login</span>
+      </div>
+      <div class="btn-topo">
+        <a class="btn" href="https://sun.eduzz.com/8WPNA4EN0P" rel="noopener">Quero meu lugar&nbsp;<span class="btnpreco">— R$&nbsp;147</span></a>
+        <p class="topo-nota">15 lugares. Começa 2 de novembro. Se quiser ler antes de decidir, é só descer.</p>
       </div>
     </div>
   </div>
@@ -520,7 +545,7 @@ document.addEventListener('click', function(e){
   <h2 style="margin-top:44px">E se a sua área não for essa?</h2>
   <p class="l"><span class="q">4 trilhas</span>, e as <span class="q">13 áreas</span> da Roda cabem todas.</p>
   <div class="trilhas">
-    <div class="tr on"><div class="nm">O BÁSICO</div><div class="ar">Movimento · Comida · Sono · Energia · Saúde</div><div class="qd">1º de outubro</div></div>
+    <div class="tr on"><div class="nm">O BÁSICO</div><div class="ar">Movimento · Comida · Sono · Energia · Saúde</div><div class="qd">2 de novembro</div></div>
     <div class="tr"><div class="nm">O RUMO</div><div class="ar">Propósito · Trabalho · Dinheiro</div><div class="qd">a próxima</div></div>
     <div class="tr"><div class="nm">A ESSÊNCIA</div><div class="ar">Você mesma · Prazer · Casa</div><div class="qd">depois</div></div>
     <div class="tr"><div class="nm">AS RAÍZES</div><div class="ar">Amor · Amizades</div><div class="qd">depois</div></div>
@@ -551,7 +576,7 @@ document.addEventListener('click', function(e){
 <!-- 9 -->
 <section class="sec esc cta"><div class="in">
   <span class="rot">9 · botão</span>
-  <h2>A turma abre <em>1º de outubro</em></h2>
+  <h2>A turma abre <em>2 de novembro</em></h2>
   <a class="btn" href="https://sun.eduzz.com/8WPNA4EN0P" rel="noopener">Quero meu lugar&nbsp;<span class="btnpreco">— R$&nbsp;147</span></a>
   <p class="vagas">15 lugares. Depois disso, só no ciclo seguinte.</p>
   <div class="resumo"><span>30 dias</span><span>21 áudios</span><span>check-in diário</span><span>grupo permanente</span><span>Roda antes e depois</span><span>mapa dos 36 dias</span></div>
@@ -660,7 +685,7 @@ document.addEventListener('click', function(e){
 <!-- 12 -->
 <section class="sec esc cta"><div class="in">
   <span class="rot">13 · botão 2</span>
-  <h2>15 lugares. Começa <em>1º de outubro</em>.</h2>
+  <h2>15 lugares. Começa <em>2 de novembro</em>.</h2>
   <a class="btn" href="https://sun.eduzz.com/8WPNA4EN0P" rel="noopener">Quero meu lugar&nbsp;<span class="btnpreco">— R$&nbsp;147</span></a>
   <p class="vagas">A turma tem teto porque acima de 15 eu não consigo responder todo mundo, todo dia.</p>
 </div></section>
@@ -718,4 +743,47 @@ var g20=el('line',{x1:px(20),y1:py(.10+(20/30)*.80),x2:px(20),y2:py(A[20]),strok
 sv.appendChild(g20);
 sv.appendChild(el('path',{d:suave(pts),fill:'none',stroke:'var(--olive-700)','stroke-width':4,'stroke-linecap':'round'}));
 [0,10,20,30].forEach(function(d){var t=el('text',{x:px(d),y:H-B+22,'text-anchor':'middle',class:'ctick'});t.textContent='dia '+d;sv.appendChild(t)});
+</script>
+
+<!-- barra fixa de compra -->
+<div class="barra" id="barra" hidden>
+  <span class="bt">
+    <span class="bq">ATÉ VIRAR — 30 dias, turma de 15</span>
+    <span class="bd">Começa 2 de novembro · R$ 147</span>
+  </span>
+  <a class="btn" href="https://sun.eduzz.com/8WPNA4EN0P" rel="noopener">Quero meu lugar</a>
+</div>
+<script>
+(function(){
+  var barra=document.getElementById('barra');
+  if(!barra) return;
+  barra.hidden=false;
+  // some quando um botao de verdade esta na tela — nao duplicar CTA
+  var ctas=[].slice.call(document.querySelectorAll('.sec .btn'));
+  // guarda QUAIS botoes estao na tela agora. Contar so o lote do callback apaga
+  // o estado de um botao que continua visivel — foi o bug da 1a versao.
+  var naTela=[];
+  function ctaVisivel(){ return naTela.length>0 }
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var i=naTela.indexOf(e.target);
+        if(e.isIntersecting){ if(i<0) naTela.push(e.target) }
+        else if(i>=0){ naTela.splice(i,1) }
+      });
+      atualizar();
+    },{rootMargin:'-10% 0px -10% 0px'});
+    ctas.forEach(function(c){obs.observe(c)});
+  }
+  function atualizar(){
+    var passou = window.scrollY > window.innerHeight*1.2;
+    barra.classList.toggle('on', passou && !ctaVisivel());
+  }
+  var t=null;
+  window.addEventListener('scroll',function(){
+    if(t) return;
+    t=requestAnimationFrame(function(){t=null;atualizar()});
+  },{passive:true});
+  atualizar();
+})();
 </script>
